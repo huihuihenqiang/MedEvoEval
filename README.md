@@ -12,7 +12,7 @@ This package provides the clinical episode engine, experiment configurations, pa
 
 ## Setup
 
-Use Python 3.10 or newer. Place the two packages side by side:
+For the tested statistical reproduction, use Python 3.10 and the supplied constraints. Place the two packages side by side:
 
 ```text
 project/
@@ -24,7 +24,7 @@ Run commands from `MedEvoEval_code/`:
 
 ```console
 python -m venv .venv
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt -c constraints-tested.txt
 ```
 
 Activate the environment before installing dependencies. CPU execution is sufficient for the offline analysis; live inference uses the configured model API.
