@@ -1,11 +1,10 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.2",
   "status": "passed",
   "model_api_calls": 0,
-  "numerical_tables": 13,
-  "numerical_cells": 12258,
+  "numerical_tables": 14,
   "numeric_tolerance": 1e-12,
-  "figures": 8,
+  "figures": 10,
   "holm_families": 18,
   "holm_tests": 141,
   "engine_modules": 19,
@@ -16,5 +15,6 @@
     "kimi-k2.5",
     "glm-5"
   ],
-  "environment": "Python 3.10.15 with installed scientific and schema dependencies; controlled offline responses"
+  "environment": "Python 3.10.15 with installed scientific and schema dependencies; controlled offline responses",
+  "statistical_tables_verification": "All 14 generated CSV reference tables match byte for byte in the tested environment."
 }
