@@ -1,0 +1,207 @@
+{
+  "results": [
+    {
+      "tag": "deepseek",
+      "n": 2520,
+      "condition_counts": {
+        "Qwen-Turbo": 80,
+        "Qwen3.5-122B-A10B": 80,
+        "GLM-5": 80,
+        "Kimi-K2.5": 80,
+        "E0": 500,
+        "E1": 500,
+        "E2": 500,
+        "E3": 500,
+        "H0": 100,
+        "H3": 100
+      },
+      "extraction_ok": 2520,
+      "fallback": 0,
+      "strict_agreement": {
+        "n": 2520,
+        "agreement": 0.955952380952381,
+        "kappa": 0.8679190402079148
+      },
+      "score_pearson": 0.9006579181903834,
+      "score_spearman": 0.88071606667906,
+      "model_rank": [
+        "GLM-5",
+        "Kimi-K2.5",
+        "Qwen3.5-122B-A10B",
+        "Qwen-Turbo"
+      ],
+      "model_kendall_tau": 1.0,
+      "condition_means": {
+        "Qwen-Turbo": {
+          "S": 0.28312276785714285,
+          "strict_accuracy": 0.0875
+        },
+        "Qwen3.5-122B-A10B": {
+          "S": 0.3622410714285714,
+          "strict_accuracy": 0.1625
+        },
+        "GLM-5": {
+          "S": 0.6038950892857142,
+          "strict_accuracy": 0.375
+        },
+        "Kimi-K2.5": {
+          "S": 0.5670200892857142,
+          "strict_accuracy": 0.2625
+        },
+        "E0": {
+          "S": 0.23267004329004332,
+          "strict_accuracy": 0.09
+        },
+        "E1": {
+          "S": 0.24239599567099565,
+          "strict_accuracy": 0.112
+        },
+        "E2": {
+          "S": 0.3596111147186148,
+          "strict_accuracy": 0.252
+        },
+        "E3": {
+          "S": 0.41085182900432904,
+          "strict_accuracy": 0.31
+        },
+        "H0": {
+          "S": 0.3097392857142857,
+          "strict_accuracy": 0.24
+        },
+        "H3": {
+          "S": 0.4019107142857143,
+          "strict_accuracy": 0.32
+        }
+      }
+    },
+    {
+      "tag": "qwenmax",
+      "n": 2520,
+      "condition_counts": {
+        "Qwen-Turbo": 80,
+        "Qwen3.5-122B-A10B": 80,
+        "GLM-5": 80,
+        "Kimi-K2.5": 80,
+        "E0": 500,
+        "E1": 500,
+        "E2": 500,
+        "E3": 500,
+        "H0": 100,
+        "H3": 100
+      },
+      "extraction_ok": 2413,
+      "fallback": 107,
+      "strict_agreement": {
+        "n": 2520,
+        "agreement": 0.9563492063492064,
+        "kappa": 0.8748501090772499
+      },
+      "score_pearson": 0.8780207714919995,
+      "score_spearman": 0.8561765440291166,
+      "model_rank": [
+        "GLM-5",
+        "Kimi-K2.5",
+        "Qwen3.5-122B-A10B",
+        "Qwen-Turbo"
+      ],
+      "model_kendall_tau": 1.0,
+      "condition_means": {
+        "Qwen-Turbo": {
+          "S": 0.36474107142857143,
+          "strict_accuracy": 0.1125
+        },
+        "Qwen3.5-122B-A10B": {
+          "S": 0.4005446428571429,
+          "strict_accuracy": 0.175
+        },
+        "GLM-5": {
+          "S": 0.611953125,
+          "strict_accuracy": 0.3875
+        },
+        "Kimi-K2.5": {
+          "S": 0.5819754464285715,
+          "strict_accuracy": 0.2625
+        },
+        "E0": {
+          "S": 0.2678238528138528,
+          "strict_accuracy": 0.112
+        },
+        "E1": {
+          "S": 0.2794890909090909,
+          "strict_accuracy": 0.146
+        },
+        "E2": {
+          "S": 0.3679078571428571,
+          "strict_accuracy": 0.246
+        },
+        "E3": {
+          "S": 0.44729670995670995,
+          "strict_accuracy": 0.364
+        },
+        "H0": {
+          "S": 0.37394999999999995,
+          "strict_accuracy": 0.33
+        },
+        "H3": {
+          "S": 0.4486892857142857,
+          "strict_accuracy": 0.36
+        }
+      }
+    },
+    {
+      "tag": "kimiretest",
+      "n": 520,
+      "condition_counts": {
+        "Qwen-Turbo": 80,
+        "Qwen3.5-122B-A10B": 80,
+        "GLM-5": 80,
+        "Kimi-K2.5": 80,
+        "H0": 100,
+        "H3": 100
+      },
+      "extraction_ok": 520,
+      "fallback": 0,
+      "strict_agreement": {
+        "n": 520,
+        "agreement": 0.9865384615384616,
+        "kappa": 0.9645528201932068
+      },
+      "score_pearson": 0.9617548283839347,
+      "score_spearman": 0.9589454992876705,
+      "model_rank": [
+        "GLM-5",
+        "Kimi-K2.5",
+        "Qwen3.5-122B-A10B",
+        "Qwen-Turbo"
+      ],
+      "model_kendall_tau": 1.0,
+      "condition_means": {
+        "Qwen-Turbo": {
+          "S": 0.30063392857142857,
+          "strict_accuracy": 0.1
+        },
+        "Qwen3.5-122B-A10B": {
+          "S": 0.35300000000000004,
+          "strict_accuracy": 0.15
+        },
+        "GLM-5": {
+          "S": 0.6120200892857144,
+          "strict_accuracy": 0.3625
+        },
+        "Kimi-K2.5": {
+          "S": 0.5659375,
+          "strict_accuracy": 0.2625
+        },
+        "H0": {
+          "S": 0.3600964285714285,
+          "strict_accuracy": 0.31
+        },
+        "H3": {
+          "S": 0.40595357142857147,
+          "strict_accuracy": 0.31
+        }
+      }
+    }
+  ],
+  "coverage_note": "Alternate judges cover the 2520 frozen outputs: four model arms at 80 each, four stream stages at 500 each, and a 100-case-per-arm held-out subset. They do not cover the complete final 200-case-per-arm held-out evaluation. Self test-retest covers 520 model and held-out-subset outputs. Extraction failure uses deterministic substring matching against evidence and management rubric points."
+}

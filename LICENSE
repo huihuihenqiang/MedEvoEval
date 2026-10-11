@@ -1,0 +1,5 @@
+This project code, documentation, schemas, and original scripts are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The paper engine is derived from MedAgentSim, whose original LICENSE.txt states the same license. MedQA-derived case text retains the upstream MIT license and attribution; see ../MedEvoEval_data/LICENSE_MedQA.txt and ../MedEvoEval_data/NOTICE.md. Third-party rights are not replaced by this project license.

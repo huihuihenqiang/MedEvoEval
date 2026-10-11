@@ -1,0 +1,12 @@
+{
+  "original_mdt": {
+    "A_无MDT": "No MDT",
+    "B_同模型MDT": "Qwen-Turbo consultant",
+    "C_强模型MDT": "Kimi-K2.5 consultant"
+  },
+  "strong_primary": {
+    "nomdt": "GLM-5 without MDT",
+    "mdt": "GLM-5 primary + GLM-5 consultant"
+  },
+  "preserve_raw_keys": true
+}

@@ -1,0 +1,94 @@
+{
+  "total_api_calls_approx": 106000,
+  "components": [
+    {
+      "scope": "research including development",
+      "api_calls": 80975,
+      "basis": "recorded ledger"
+    },
+    {
+      "scope": "supplementary runs",
+      "api_calls": 23000,
+      "basis": "estimate"
+    },
+    {
+      "scope": "Kimi consultant experiment",
+      "api_calls": 1749,
+      "basis": "measured"
+    }
+  ],
+  "rows": [
+    {
+      "experiment": "E0-E3 stream run inventory",
+      "api_calls": 27524,
+      "input_tokens": 19605065,
+      "output_tokens": 3352299,
+      "elapsed_seconds": "",
+      "basis": "M/E",
+      "scope": "Calls from request-count ledger; tokens are calibrated estimates"
+    },
+    {
+      "experiment": "DeepSeek rejudge (2520 outputs)",
+      "api_calls": 2520,
+      "input_tokens": 1366386,
+      "output_tokens": 122872,
+      "elapsed_seconds": 414.0,
+      "basis": "M",
+      "scope": "2520 recorded outputs"
+    },
+    {
+      "experiment": "Qwen-Max resumed segment (867 outputs)",
+      "api_calls": 869,
+      "input_tokens": 510241,
+      "output_tokens": 40933,
+      "elapsed_seconds": 162.4,
+      "basis": "P",
+      "scope": "867 recorded outputs"
+    },
+    {
+      "experiment": "Same-judge retest (520 outputs)",
+      "api_calls": 520,
+      "input_tokens": 297011,
+      "output_tokens": 27735,
+      "elapsed_seconds": 125.1,
+      "basis": "M",
+      "scope": "520 recorded outputs"
+    },
+    {
+      "experiment": "Frozen-bank control (300 episodes)",
+      "api_calls": 3624,
+      "input_tokens": 2511815,
+      "output_tokens": 278787,
+      "elapsed_seconds": "",
+      "basis": "M",
+      "scope": "All three arms"
+    },
+    {
+      "experiment": "Interface intervention (640 episodes)",
+      "api_calls": 6416,
+      "input_tokens": 4203181,
+      "output_tokens": 6904473,
+      "elapsed_seconds": "",
+      "basis": "M",
+      "scope": "640 completed episodes"
+    },
+    {
+      "experiment": "Kimi-consultant arm (100 episodes)",
+      "api_calls": 1749,
+      "input_tokens": 1463390,
+      "output_tokens": 223331,
+      "elapsed_seconds": "",
+      "basis": "M",
+      "scope": "100 completed episodes"
+    },
+    {
+      "experiment": "Strong-primary MDT (200 episodes)",
+      "api_calls": 2000,
+      "input_tokens": "",
+      "output_tokens": "",
+      "elapsed_seconds": "",
+      "basis": "E",
+      "scope": "Estimated calls for both arms"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chinese MedEvoEval Process Training Records",
+  "type": "object",
+  "oneOf": [
+    {
+      "required": ["record_type", "trajectory_id", "source_run_id", "release_case_id", "case_input", "turns", "scores", "manager_label", "provenance"],
+      "properties": {
+        "record_type": {"const": "trajectory"},
+        "trajectory_id": {"type": "string"},
+        "source_run_id": {"type": "string"},
+        "release_case_id": {"type": "string"},
+        "original_case_id": {"type": "string"},
+        "case_input": {"type": "object"},
+        "generation_config": {"type": "object"},
+        "turns": {"type": "array", "items": {"type": "object"}},
+        "dialogue": {"type": "array", "items": {"type": "object"}},
+        "final_decision": {"type": "object"},
+        "scores": {"type": "object"},
+        "objective_metrics": {"type": "object"},
+        "manager_label": {"type": "object"},
+        "quality_tags": {"type": "array", "items": {"type": "string"}},
+        "provenance": {"type": "object"}
+      }
+    },
+    {
+      "required": ["record_type", "step_id", "trajectory_id", "context_messages", "available_actions", "target_action", "outcome_label", "trajectory_score"],
+      "properties": {
+        "record_type": {"const": "step"},
+        "step_id": {"type": "string"},
+        "trajectory_id": {"type": "string"},
+        "source_run_id": {"type": "string"},
+        "release_case_id": {"type": "string"},
+        "context_messages": {"type": "array", "items": {"type": "object"}},
+        "available_actions": {"type": "array", "items": {"type": "string"}},
+        "available_tests": {"type": "array", "items": {"type": "string"}},
+        "observations_so_far": {"type": "array", "items": {"type": "object"}},
+        "target_action": {"type": "string"},
+        "target_text": {"type": "string"},
+        "target_test_name": {"type": "string"},
+        "working_diagnoses": {"type": "array", "items": {"type": "string"}},
+        "rationale": {"type": "array", "items": {"type": "string"}},
+        "outcome_label": {"type": "object"},
+        "trajectory_score": {"type": "number"}
+      }
+    }
+  ],
+  "additionalProperties": true
+}

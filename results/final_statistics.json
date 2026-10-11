@@ -1,0 +1,2267 @@
+{
+  "schema_version": 1,
+  "software": {
+    "python": "3.10.15",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "matplotlib": "3.7.2"
+  },
+  "utility_formula": "0.6*S - 0.2*(turns/10) - 0.1*(tests/3) - 0.1*invalid_test_rate",
+  "R1": {
+    "n": 80,
+    "groups": {
+      "E3": 22,
+      "H0": 10,
+      "E0": 10,
+      "Kimi-K2.5": 7,
+      "H3": 14,
+      "Qwen-Turbo": 6,
+      "GLM-5": 7,
+      "Qwen3.5-122B-A10B": 4
+    },
+    "agreement": {
+      "A_B": {
+        "n": 80,
+        "agreement": 0.9125,
+        "kappa": 0.8243412797992471,
+        "five_grade_exact_agreement": 0.7125
+      },
+      "A_auto": {
+        "n": 80,
+        "agreement": 0.8625,
+        "kappa": 0.7267080745341615,
+        "five_grade_exact_agreement": 0.3875
+      },
+      "B_auto": {
+        "n": 80,
+        "agreement": 0.9,
+        "kappa": 0.801857585139319,
+        "five_grade_exact_agreement": 0.525
+      }
+    },
+    "direction_agreement": 21,
+    "direction_total": 24,
+    "contrast_definition": "All six pairs among four models plus E3-E0 and H3-H0, each on diagnosis/evidence/plan mean scores; signs rounded at 12 decimals; zero is a separate direction.",
+    "contrasts": [
+      {
+        "comparison": "Qwen3.5-122B-A10B - Qwen-Turbo",
+        "dimension": "diagnosis_score",
+        "n_a": 6,
+        "n_b": 4,
+        "delta_A": -0.10416666666666669,
+        "delta_B": 0.16666666666666669,
+        "delta_auto": -0.125,
+        "sign_A": -1,
+        "sign_B": 1,
+        "sign_auto": -1,
+        "all_directions_agree": false
+      },
+      {
+        "comparison": "Qwen3.5-122B-A10B - Qwen-Turbo",
+        "dimension": "evidence_score",
+        "n_a": 6,
+        "n_b": 4,
+        "delta_A": -0.08333333333333331,
+        "delta_B": 0.038690476166666654,
+        "delta_auto": 0.09375,
+        "sign_A": -1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": false
+      },
+      {
+        "comparison": "Qwen3.5-122B-A10B - Qwen-Turbo",
+        "dimension": "plan_score",
+        "n_a": 6,
+        "n_b": 4,
+        "delta_A": 0.041666666666666685,
+        "delta_B": 0.16666666666666669,
+        "delta_auto": -0.041666666666666685,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": -1,
+        "all_directions_agree": false
+      },
+      {
+        "comparison": "Kimi-K2.5 - Qwen-Turbo",
+        "dimension": "diagnosis_score",
+        "n_a": 6,
+        "n_b": 7,
+        "delta_A": 0.4761904761904762,
+        "delta_B": 0.5595238095238095,
+        "delta_auto": 0.5,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "Kimi-K2.5 - Qwen-Turbo",
+        "dimension": "evidence_score",
+        "n_a": 6,
+        "n_b": 7,
+        "delta_A": 0.4345238095238096,
+        "delta_B": 0.38690476188095235,
+        "delta_auto": 0.34740646235714284,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "Kimi-K2.5 - Qwen-Turbo",
+        "dimension": "plan_score",
+        "n_a": 6,
+        "n_b": 7,
+        "delta_A": 0.5595238095238095,
+        "delta_B": 0.5595238095238095,
+        "delta_auto": 0.6011904761904763,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Qwen-Turbo",
+        "dimension": "diagnosis_score",
+        "n_a": 6,
+        "n_b": 7,
+        "delta_A": 0.369047619047619,
+        "delta_B": 0.4166666666666667,
+        "delta_auto": 0.4285714285714286,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Qwen-Turbo",
+        "dimension": "evidence_score",
+        "n_a": 6,
+        "n_b": 7,
+        "delta_A": 0.3630952380952381,
+        "delta_B": 0.31547619045238096,
+        "delta_auto": 0.3144132650714286,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Qwen-Turbo",
+        "dimension": "plan_score",
+        "n_a": 6,
+        "n_b": 7,
+        "delta_A": 0.4523809523809524,
+        "delta_B": 0.4880952380952381,
+        "delta_auto": 0.4583333333333333,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "Kimi-K2.5 - Qwen3.5-122B-A10B",
+        "dimension": "diagnosis_score",
+        "n_a": 4,
+        "n_b": 7,
+        "delta_A": 0.5803571428571429,
+        "delta_B": 0.3928571428571429,
+        "delta_auto": 0.625,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "Kimi-K2.5 - Qwen3.5-122B-A10B",
+        "dimension": "evidence_score",
+        "n_a": 4,
+        "n_b": 7,
+        "delta_A": 0.5178571428571429,
+        "delta_B": 0.3482142857142857,
+        "delta_auto": 0.25365646235714284,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "Kimi-K2.5 - Qwen3.5-122B-A10B",
+        "dimension": "plan_score",
+        "n_a": 4,
+        "n_b": 7,
+        "delta_A": 0.5178571428571429,
+        "delta_B": 0.3928571428571429,
+        "delta_auto": 0.6428571428571429,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Qwen3.5-122B-A10B",
+        "dimension": "diagnosis_score",
+        "n_a": 4,
+        "n_b": 7,
+        "delta_A": 0.4732142857142857,
+        "delta_B": 0.25,
+        "delta_auto": 0.5535714285714286,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Qwen3.5-122B-A10B",
+        "dimension": "evidence_score",
+        "n_a": 4,
+        "n_b": 7,
+        "delta_A": 0.4464285714285714,
+        "delta_B": 0.2767857142857143,
+        "delta_auto": 0.22066326507142858,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Qwen3.5-122B-A10B",
+        "dimension": "plan_score",
+        "n_a": 4,
+        "n_b": 7,
+        "delta_A": 0.4107142857142857,
+        "delta_B": 0.3214285714285714,
+        "delta_auto": 0.5,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Kimi-K2.5",
+        "dimension": "diagnosis_score",
+        "n_a": 7,
+        "n_b": 7,
+        "delta_A": -0.1071428571428572,
+        "delta_B": -0.1428571428571429,
+        "delta_auto": -0.0714285714285714,
+        "sign_A": -1,
+        "sign_B": -1,
+        "sign_auto": -1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Kimi-K2.5",
+        "dimension": "evidence_score",
+        "n_a": 7,
+        "n_b": 7,
+        "delta_A": -0.07142857142857151,
+        "delta_B": -0.0714285714285714,
+        "delta_auto": -0.03299319728571426,
+        "sign_A": -1,
+        "sign_B": -1,
+        "sign_auto": -1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "GLM-5 - Kimi-K2.5",
+        "dimension": "plan_score",
+        "n_a": 7,
+        "n_b": 7,
+        "delta_A": -0.1071428571428572,
+        "delta_B": -0.07142857142857151,
+        "delta_auto": -0.1428571428571429,
+        "sign_A": -1,
+        "sign_B": -1,
+        "sign_auto": -1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "E3 - E0",
+        "dimension": "diagnosis_score",
+        "n_a": 10,
+        "n_b": 22,
+        "delta_A": 0.36590909090909096,
+        "delta_B": 0.48863636363636365,
+        "delta_auto": 0.42272727272727273,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "E3 - E0",
+        "dimension": "evidence_score",
+        "n_a": 10,
+        "n_b": 22,
+        "delta_A": 0.18825757577272723,
+        "delta_B": 0.2602272727272727,
+        "delta_auto": 0.10770562769090913,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "E3 - E0",
+        "dimension": "plan_score",
+        "n_a": 10,
+        "n_b": 22,
+        "delta_A": 0.28409090909090906,
+        "delta_B": 0.22272727272727272,
+        "delta_auto": 0.1431818181818182,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "H3 - H0",
+        "dimension": "diagnosis_score",
+        "n_a": 10,
+        "n_b": 14,
+        "delta_A": 0.08214285714285707,
+        "delta_B": 0.15357142857142858,
+        "delta_auto": 0.0678571428571429,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "H3 - H0",
+        "dimension": "evidence_score",
+        "n_a": 10,
+        "n_b": 14,
+        "delta_A": 0.09163265301428575,
+        "delta_B": 0.035204081642857155,
+        "delta_auto": 0.025731292557142904,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      },
+      {
+        "comparison": "H3 - H0",
+        "dimension": "plan_score",
+        "n_a": 10,
+        "n_b": 14,
+        "delta_A": 0.22142857142857142,
+        "delta_B": 0.175,
+        "delta_auto": 0.25,
+        "sign_A": 1,
+        "sign_B": 1,
+        "sign_auto": 1,
+        "all_directions_agree": true
+      }
+    ],
+    "blinding": "Authors confirm independent mutually blinded physician rescoring without automated scores.",
+    "sampling_unit": "Audited output, uniquely keyed by audit_id; episode_id alone is not unique across conditions."
+  },
+  "R2": {
+    "n_pairs": 200,
+    "scenario_ids": "500-699 inclusive",
+    "results": [
+      {
+        "family_id": "heldout_transfer",
+        "comparison": "H3 - H0",
+        "metric": "total_score",
+        "n": 200,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.3353535714285714,
+        "mean_b": 0.3845375,
+        "delta_b_minus_a": 0.04918392857142858,
+        "raw_p": 0.12023349727906762,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": 0.004921339285714289,
+        "ci95_high": 0.0944732589285714,
+        "bootstrap_resamples": 100000,
+        "bootstrap_seed": 507,
+        "family_size": 7,
+        "holm_p": 0.36984392429169494,
+        "holm_adjusted_p": 0.36984392429169494,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "heldout_transfer",
+        "comparison": "H3 - H0",
+        "metric": "utility",
+        "n": 200,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.01947880952380952,
+        "mean_b": 0.06778916666666665,
+        "delta_b_minus_a": 0.04831035714285715,
+        "raw_p": 0.002841508829599636,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": 0.018542827380952386,
+        "ci95_high": 0.07842017261904762,
+        "bootstrap_resamples": 100000,
+        "bootstrap_seed": 508,
+        "family_size": 7,
+        "holm_p": 0.017049052977597817,
+        "holm_adjusted_p": 0.017049052977597817,
+        "significant_holm_0_05": true
+      },
+      {
+        "family_id": "heldout_transfer",
+        "comparison": "H3 - H0",
+        "metric": "turns",
+        "n": 200,
+        "test": "paired Wilcoxon",
+        "mean_a": 6.645,
+        "mean_b": 5.73,
+        "delta_b_minus_a": -0.915,
+        "raw_p": 0.0000037409698118306515,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -1.29,
+        "ci95_high": -0.54,
+        "bootstrap_resamples": 100000,
+        "bootstrap_seed": 509,
+        "family_size": 7,
+        "holm_p": 0.000026186788682814562,
+        "holm_adjusted_p": 0.000026186788682814562,
+        "significant_holm_0_05": true
+      },
+      {
+        "family_id": "heldout_transfer",
+        "comparison": "H3 - H0",
+        "metric": "tests",
+        "n": 200,
+        "test": "paired Wilcoxon",
+        "mean_a": 1.305,
+        "mean_b": 1.355,
+        "delta_b_minus_a": 0.05,
+        "raw_p": 0.3552805407432741,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.06,
+        "ci95_high": 0.16,
+        "bootstrap_resamples": 100000,
+        "bootstrap_seed": 510,
+        "family_size": 7,
+        "holm_p": 0.7105610814865482,
+        "holm_adjusted_p": 0.7105610814865482,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "heldout_transfer",
+        "comparison": "H3 - H0",
+        "metric": "strict_accuracy",
+        "n": 200,
+        "test": "exact McNemar",
+        "mean_a": 0.26,
+        "mean_b": 0.295,
+        "delta_b_minus_a": 0.035,
+        "raw_p": 0.3916029105474905,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.035,
+        "ci95_high": 0.105,
+        "bootstrap_resamples": 100000,
+        "bootstrap_seed": 511,
+        "discordant_improved": 28,
+        "discordant_worsened": 21,
+        "family_size": 7,
+        "holm_p": 0.7105610814865482,
+        "holm_adjusted_p": 0.7105610814865482,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "heldout_transfer",
+        "comparison": "H3 - H0",
+        "metric": "pass_rate",
+        "n": 200,
+        "test": "exact McNemar",
+        "mean_a": 0.18,
+        "mean_b": 0.255,
+        "delta_b_minus_a": 0.075,
+        "raw_p": 0.03998605682605215,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": 0.01,
+        "ci95_high": 0.14,
+        "bootstrap_resamples": 100000,
+        "bootstrap_seed": 512,
+        "discordant_improved": 31,
+        "discordant_worsened": 16,
+        "family_size": 7,
+        "holm_p": 0.19993028413026076,
+        "holm_adjusted_p": 0.19993028413026076,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "heldout_transfer",
+        "comparison": "H3 - H0",
+        "metric": "nondanger_rate",
+        "n": 200,
+        "test": "exact McNemar",
+        "mean_a": 0.565,
+        "mean_b": 0.635,
+        "delta_b_minus_a": 0.07,
+        "raw_p": 0.09246098107292373,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.005,
+        "ci95_high": 0.145,
+        "bootstrap_resamples": 100000,
+        "bootstrap_seed": 513,
+        "discordant_improved": 37,
+        "discordant_worsened": 23,
+        "family_size": 7,
+        "holm_p": 0.36984392429169494,
+        "holm_adjusted_p": 0.36984392429169494,
+        "significant_holm_0_05": false
+      }
+    ]
+  },
+  "A1": {
+    "n_families": 18,
+    "n_tests": 141,
+    "families": [
+      {
+        "family_id": "heldout_transfer",
+        "n_tests": 7,
+        "n_significant_holm": 2,
+        "surviving": [
+          "H3 - H0 / utility",
+          "H3 - H0 / turns"
+        ]
+      },
+      {
+        "family_id": "table8_dynamic_models",
+        "n_tests": 9,
+        "n_significant_holm": 6,
+        "surviving": [
+          "Kimi-K2.5 - Qwen-Turbo / total_score",
+          "Kimi-K2.5 - Qwen-Turbo / utility",
+          "Kimi-K2.5 - Qwen-Turbo / strict_accuracy",
+          "GLM-5 - Qwen-Turbo / total_score",
+          "GLM-5 - Qwen-Turbo / utility",
+          "GLM-5 - Qwen-Turbo / strict_accuracy"
+        ]
+      },
+      {
+        "family_id": "original_mdt_vs_nomdt",
+        "n_tests": 10,
+        "n_significant_holm": 3,
+        "surviving": [
+          "B_同模型MDT - A_无MDT / tests",
+          "C_强模型MDT - A_无MDT / turns",
+          "C_强模型MDT - A_无MDT / tests"
+        ]
+      },
+      {
+        "family_id": "original_mdt_consultant",
+        "n_tests": 5,
+        "n_significant_holm": 2,
+        "surviving": [
+          "C_强模型MDT - B_同模型MDT / turns",
+          "C_强模型MDT - B_同模型MDT / tests"
+        ]
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "n_tests": 9,
+        "n_significant_holm": 1,
+        "surviving": [
+          "h3real - h3shuffled / tests"
+        ]
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "n_tests": 9,
+        "n_significant_holm": 0,
+        "surviving": []
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "n_tests": 9,
+        "n_significant_holm": 0,
+        "surviving": []
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "n_tests": 11,
+        "n_significant_holm": 2,
+        "surviving": [
+          "MDT - NoMDT / turns",
+          "MDT - NoMDT / tests"
+        ]
+      },
+      {
+        "family_id": "memory_content_ablation",
+        "n_tests": 6,
+        "n_significant_holm": 0,
+        "surviving": []
+      },
+      {
+        "family_id": "retrieval_scale_ablation",
+        "n_tests": 6,
+        "n_significant_holm": 0,
+        "surviving": []
+      },
+      {
+        "family_id": "update_trend_g0",
+        "n_tests": 6,
+        "n_significant_holm": 0,
+        "surviving": []
+      },
+      {
+        "family_id": "update_trend_g1",
+        "n_tests": 6,
+        "n_significant_holm": 0,
+        "surviving": []
+      },
+      {
+        "family_id": "backward_transfer",
+        "n_tests": 2,
+        "n_significant_holm": 0,
+        "surviving": []
+      },
+      {
+        "family_id": "interface_arm_effect_outcomes",
+        "n_tests": 12,
+        "n_significant_holm": 2,
+        "surviving": [
+          "Qwen3.5-122B-A10B: normalized - raw / total_score",
+          "Qwen3.5-122B-A10B: normalized - raw / utility"
+        ]
+      },
+      {
+        "family_id": "interface_arm_effect_process",
+        "n_tests": 8,
+        "n_significant_holm": 2,
+        "surviving": [
+          "Qwen3.5-122B-A10B: normalized - raw / turns",
+          "Qwen3.5-122B-A10B: normalized - raw / tests"
+        ]
+      },
+      {
+        "family_id": "interface_interface_manipulation_check",
+        "n_tests": 8,
+        "n_significant_holm": 2,
+        "surviving": [
+          "Qwen3.5-122B-A10B: normalized - raw / llm_error_turns",
+          "Qwen3.5-122B-A10B: normalized - raw / any_error_episode"
+        ]
+      },
+      {
+        "family_id": "interface_raw_model_ranking",
+        "n_tests": 9,
+        "n_significant_holm": 5,
+        "surviving": [
+          "GLM-5 - Qwen-Turbo / total_score",
+          "GLM-5 - Qwen-Turbo / utility",
+          "GLM-5 - Qwen-Turbo / strict_accuracy",
+          "Kimi-K2.5 - Qwen-Turbo / total_score",
+          "Kimi-K2.5 - Qwen-Turbo / utility"
+        ]
+      },
+      {
+        "family_id": "interface_normalized_model_ranking",
+        "n_tests": 9,
+        "n_significant_holm": 8,
+        "surviving": [
+          "Qwen3.5-122B-A10B - Qwen-Turbo / total_score",
+          "Qwen3.5-122B-A10B - Qwen-Turbo / utility",
+          "GLM-5 - Qwen-Turbo / total_score",
+          "GLM-5 - Qwen-Turbo / utility",
+          "GLM-5 - Qwen-Turbo / strict_accuracy",
+          "Kimi-K2.5 - Qwen-Turbo / total_score",
+          "Kimi-K2.5 - Qwen-Turbo / utility",
+          "Kimi-K2.5 - Qwen-Turbo / strict_accuracy"
+        ]
+      }
+    ],
+    "notes": "One Holm family per reported scientific question; no strong-MDT triggered-only family. Utility trends are recomputed from stage means; unaffected stage diagnostics retain their original p-values."
+  },
+  "A2": {
+    "verification_status": "Author-confirmed published aggregate.",
+    "aggregate": {
+      "reviewerA": {
+        "n_scored": 50,
+        "fid_diagnosis_preserved_YN_pass_rate": 1,
+        "fid_history_exam_split_faithful_YN_pass_rate": 1,
+        "fid_test_catalog_plausible_YN_pass_rate": 1,
+        "fid_no_fabricated_critical_info_YN_pass_rate": 0.96,
+        "overall_faithfulness_mean_1to5": 4.78
+      },
+      "reviewerB": {
+        "n_scored": 50,
+        "fid_diagnosis_preserved_YN_pass_rate": 1,
+        "fid_history_exam_split_faithful_YN_pass_rate": 0.9,
+        "fid_test_catalog_plausible_YN_pass_rate": 1,
+        "fid_no_fabricated_critical_info_YN_pass_rate": 1,
+        "overall_faithfulness_mean_1to5": 4.46
+      },
+      "inter_rater_A_vs_B": {
+        "n_common": 50,
+        "fid_diagnosis_preserved_YN_agreement": 1,
+        "fid_history_exam_split_faithful_YN_agreement": 0.9,
+        "fid_test_catalog_plausible_YN_agreement": 1,
+        "fid_no_fabricated_critical_info_YN_agreement": 0.96
+      }
+    }
+  },
+  "A3": {
+    "rejudges": [
+      {
+        "tag": "deepseek",
+        "n": 2520,
+        "condition_counts": {
+          "Qwen-Turbo": 80,
+          "Qwen3.5-122B-A10B": 80,
+          "GLM-5": 80,
+          "Kimi-K2.5": 80,
+          "E0": 500,
+          "E1": 500,
+          "E2": 500,
+          "E3": 500,
+          "H0": 100,
+          "H3": 100
+        },
+        "extraction_ok": 2520,
+        "fallback": 0,
+        "strict_agreement": {
+          "n": 2520,
+          "agreement": 0.955952380952381,
+          "kappa": 0.8679190402079148
+        },
+        "score_pearson": 0.9006579181903834,
+        "score_spearman": 0.88071606667906,
+        "model_rank": [
+          "GLM-5",
+          "Kimi-K2.5",
+          "Qwen3.5-122B-A10B",
+          "Qwen-Turbo"
+        ],
+        "model_kendall_tau": 1,
+        "condition_means": {
+          "Qwen-Turbo": {
+            "S": 0.28312276785714285,
+            "strict_accuracy": 0.0875
+          },
+          "Qwen3.5-122B-A10B": {
+            "S": 0.3622410714285714,
+            "strict_accuracy": 0.1625
+          },
+          "GLM-5": {
+            "S": 0.6038950892857142,
+            "strict_accuracy": 0.375
+          },
+          "Kimi-K2.5": {
+            "S": 0.5670200892857142,
+            "strict_accuracy": 0.2625
+          },
+          "E0": {
+            "S": 0.23267004329004332,
+            "strict_accuracy": 0.09
+          },
+          "E1": {
+            "S": 0.24239599567099565,
+            "strict_accuracy": 0.112
+          },
+          "E2": {
+            "S": 0.3596111147186148,
+            "strict_accuracy": 0.252
+          },
+          "E3": {
+            "S": 0.41085182900432904,
+            "strict_accuracy": 0.31
+          },
+          "H0": {
+            "S": 0.3097392857142857,
+            "strict_accuracy": 0.24
+          },
+          "H3": {
+            "S": 0.4019107142857143,
+            "strict_accuracy": 0.32
+          }
+        }
+      },
+      {
+        "tag": "qwenmax",
+        "n": 2520,
+        "condition_counts": {
+          "Qwen-Turbo": 80,
+          "Qwen3.5-122B-A10B": 80,
+          "GLM-5": 80,
+          "Kimi-K2.5": 80,
+          "E0": 500,
+          "E1": 500,
+          "E2": 500,
+          "E3": 500,
+          "H0": 100,
+          "H3": 100
+        },
+        "extraction_ok": 2413,
+        "fallback": 107,
+        "strict_agreement": {
+          "n": 2520,
+          "agreement": 0.9563492063492064,
+          "kappa": 0.8748501090772499
+        },
+        "score_pearson": 0.8780207714919995,
+        "score_spearman": 0.8561765440291166,
+        "model_rank": [
+          "GLM-5",
+          "Kimi-K2.5",
+          "Qwen3.5-122B-A10B",
+          "Qwen-Turbo"
+        ],
+        "model_kendall_tau": 1,
+        "condition_means": {
+          "Qwen-Turbo": {
+            "S": 0.36474107142857143,
+            "strict_accuracy": 0.1125
+          },
+          "Qwen3.5-122B-A10B": {
+            "S": 0.4005446428571429,
+            "strict_accuracy": 0.175
+          },
+          "GLM-5": {
+            "S": 0.611953125,
+            "strict_accuracy": 0.3875
+          },
+          "Kimi-K2.5": {
+            "S": 0.5819754464285715,
+            "strict_accuracy": 0.2625
+          },
+          "E0": {
+            "S": 0.2678238528138528,
+            "strict_accuracy": 0.112
+          },
+          "E1": {
+            "S": 0.2794890909090909,
+            "strict_accuracy": 0.146
+          },
+          "E2": {
+            "S": 0.3679078571428571,
+            "strict_accuracy": 0.246
+          },
+          "E3": {
+            "S": 0.44729670995670995,
+            "strict_accuracy": 0.364
+          },
+          "H0": {
+            "S": 0.37394999999999995,
+            "strict_accuracy": 0.33
+          },
+          "H3": {
+            "S": 0.4486892857142857,
+            "strict_accuracy": 0.36
+          }
+        }
+      },
+      {
+        "tag": "kimiretest",
+        "n": 520,
+        "condition_counts": {
+          "Qwen-Turbo": 80,
+          "Qwen3.5-122B-A10B": 80,
+          "GLM-5": 80,
+          "Kimi-K2.5": 80,
+          "H0": 100,
+          "H3": 100
+        },
+        "extraction_ok": 520,
+        "fallback": 0,
+        "strict_agreement": {
+          "n": 520,
+          "agreement": 0.9865384615384616,
+          "kappa": 0.9645528201932068
+        },
+        "score_pearson": 0.9617548283839347,
+        "score_spearman": 0.9589454992876705,
+        "model_rank": [
+          "GLM-5",
+          "Kimi-K2.5",
+          "Qwen3.5-122B-A10B",
+          "Qwen-Turbo"
+        ],
+        "model_kendall_tau": 1,
+        "condition_means": {
+          "Qwen-Turbo": {
+            "S": 0.30063392857142857,
+            "strict_accuracy": 0.1
+          },
+          "Qwen3.5-122B-A10B": {
+            "S": 0.35300000000000004,
+            "strict_accuracy": 0.15
+          },
+          "GLM-5": {
+            "S": 0.6120200892857144,
+            "strict_accuracy": 0.3625
+          },
+          "Kimi-K2.5": {
+            "S": 0.5659375,
+            "strict_accuracy": 0.2625
+          },
+          "H0": {
+            "S": 0.3600964285714285,
+            "strict_accuracy": 0.31
+          },
+          "H3": {
+            "S": 0.40595357142857147,
+            "strict_accuracy": 0.31
+          }
+        }
+      }
+    ],
+    "judge_free": [
+      {
+        "condition": "Qwen-Turbo",
+        "n": 80,
+        "judge_free_strict": 0.1125,
+        "reported_strict": 0.1,
+        "downgraded": 1,
+        "upgraded": 0
+      },
+      {
+        "condition": "Qwen3.5-122B-A10B",
+        "n": 80,
+        "judge_free_strict": 0.175,
+        "reported_strict": 0.15,
+        "downgraded": 2,
+        "upgraded": 0
+      },
+      {
+        "condition": "GLM-5",
+        "n": 80,
+        "judge_free_strict": 0.3875,
+        "reported_strict": 0.375,
+        "downgraded": 1,
+        "upgraded": 0
+      },
+      {
+        "condition": "Kimi-K2.5",
+        "n": 80,
+        "judge_free_strict": 0.2625,
+        "reported_strict": 0.2625,
+        "downgraded": 0,
+        "upgraded": 0
+      },
+      {
+        "condition": "E0",
+        "n": 500,
+        "judge_free_strict": 0.144,
+        "reported_strict": 0.092,
+        "downgraded": 26,
+        "upgraded": 0
+      },
+      {
+        "condition": "E1",
+        "n": 500,
+        "judge_free_strict": 0.176,
+        "reported_strict": 0.136,
+        "downgraded": 20,
+        "upgraded": 0
+      },
+      {
+        "condition": "E2",
+        "n": 500,
+        "judge_free_strict": 0.346,
+        "reported_strict": 0.276,
+        "downgraded": 35,
+        "upgraded": 0
+      },
+      {
+        "condition": "E3",
+        "n": 500,
+        "judge_free_strict": 0.408,
+        "reported_strict": 0.342,
+        "downgraded": 33,
+        "upgraded": 0
+      },
+      {
+        "condition": "H0",
+        "n": 100,
+        "judge_free_strict": 0.34,
+        "reported_strict": 0.29,
+        "downgraded": 5,
+        "upgraded": 0
+      },
+      {
+        "condition": "H3",
+        "n": 100,
+        "judge_free_strict": 0.37,
+        "reported_strict": 0.33,
+        "downgraded": 4,
+        "upgraded": 0
+      }
+    ]
+  },
+  "A4": {
+    "acceptance": {
+      "run_id": "interface-ab-20260725",
+      "expected_episodes": 640,
+      "completed_episodes": 640,
+      "exact_80_per_model_arm": true,
+      "policy_hash_matches_manifest": true,
+      "dataset_hash_matches_manifest": true,
+      "normalization_events": 112,
+      "protected_field_hash_failures": [],
+      "format_only_reprompt_turns": 0,
+      "protocol_integrity_failures": {
+        "arm_config_failures": [],
+        "paired_config_failures": [],
+        "case_payload_failures": [],
+        "nonempty_api_key_snapshots": [],
+        "raw_normalization_events": [],
+        "interface_accounting_failures": [],
+        "arm_order_failures": []
+      },
+      "runner_error_audit": {
+        "errors_recorded": 1,
+        "errors_recovered": 1,
+        "errors_unresolved": [],
+        "by_type": {
+          "OSError": 1
+        },
+        "rows": [
+          {
+            "model": "Kimi-K2.5",
+            "arm": "raw",
+            "scenario_id": 23,
+            "error_type": "OSError",
+            "recovered": true
+          }
+        ],
+        "recorded_error_usage": {
+          "calls": 14,
+          "http_errors": 0,
+          "prompt_tokens": 9490,
+          "completion_tokens": 2238,
+          "reasoning_tokens": 0,
+          "by_model": {
+            "kimi-k2.5": {
+              "calls": 9,
+              "http_errors": 0,
+              "prompt_tokens": 8221,
+              "completion_tokens": 2043,
+              "reasoning_tokens": 0
+            },
+            "qwen-turbo": {
+              "calls": 5,
+              "http_errors": 0,
+              "prompt_tokens": 1269,
+              "completion_tokens": 195,
+              "reasoning_tokens": 0
+            }
+          },
+          "standard_prices_cny_per_million": {
+            "qwen-turbo": {
+              "input": 0.3,
+              "output": 0.6
+            },
+            "qwen3.5-122b-a10b": {
+              "input": 0.8,
+              "output": 6.4
+            },
+            "glm-5": {
+              "input": 4,
+              "output": 18
+            },
+            "kimi-k2.5": {
+              "input": 4,
+              "output": 21
+            }
+          },
+          "estimated_list_cost_cny_by_model": {
+            "kimi-k2.5": 0.075787,
+            "qwen-turbo": 0.0004977
+          },
+          "estimated_list_cost_cny_total": 0.0762847,
+          "cost_note": "Standard China-mainland pay-as-you-go list-price estimate. Actual billing can be lower because free quota, savings plans, promotions, and cache discounts are not observable here.",
+          "pricing_source": "https://help.aliyun.com/en/model-studio/model-pricing"
+        }
+      },
+      "secret_pattern_files": [],
+      "http_errors": 0,
+      "accepted": true
+    },
+    "n": 640
+  },
+  "A5": {
+    "n_each": 100,
+    "results": [
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "total_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.3304928571428571,
+        "mean_b": 0.3928660714285715,
+        "delta_b_minus_a": 0.06237321428571429,
+        "raw_p": 0.09885381884798498,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.006170357142857129,
+        "ci95_high": 0.13137937499999994,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.5204985929250392,
+        "holm_adjusted_p": 0.5204985929250392,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "utility",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.017829047619047602,
+        "mean_b": 0.06325297619047618,
+        "delta_b_minus_a": 0.04542392857142857,
+        "raw_p": 0.08674976548750654,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.0013905982142857118,
+        "ci95_high": 0.09172227678571426,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.5204985929250392,
+        "holm_adjusted_p": 0.5204985929250392,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "turns",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 6.64,
+        "mean_b": 5.94,
+        "delta_b_minus_a": -0.7,
+        "raw_p": 0.019849117902540653,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -1.24,
+        "ci95_high": -0.16,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.15879294322032522,
+        "holm_adjusted_p": 0.15879294322032522,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "tests",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 1.22,
+        "mean_b": 1.5,
+        "delta_b_minus_a": 0.28,
+        "raw_p": 0.0005967832404554949,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": 0.13,
+        "ci95_high": 0.43,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.005371049164099454,
+        "holm_adjusted_p": 0.005371049164099454,
+        "significant_holm_0_05": true
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "evidence_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.2749761904761905,
+        "mean_b": 0.29788690476190477,
+        "delta_b_minus_a": 0.02291071428571428,
+        "raw_p": 0.2294828796510019,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.01844077380952381,
+        "ci95_high": 0.06470282738095236,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.701860995963216,
+        "holm_adjusted_p": 0.701860995963216,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "plan_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.29,
+        "mean_b": 0.38,
+        "delta_b_minus_a": 0.09,
+        "raw_p": 0.02126782744505976,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": 0.014937500000000057,
+        "ci95_high": 0.165,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.15879294322032522,
+        "holm_adjusted_p": 0.15879294322032522,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "strict_accuracy",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.25,
+        "mean_b": 0.3,
+        "delta_b_minus_a": 0.05,
+        "raw_p": 0.42435622215270996,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.05,
+        "ci95_high": 0.15,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 15,
+        "discordant_worsened": 10,
+        "family_size": 9,
+        "holm_p": 0.701860995963216,
+        "holm_adjusted_p": 0.701860995963216,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "pass_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.18,
+        "mean_b": 0.25,
+        "delta_b_minus_a": 0.07,
+        "raw_p": 0.24778856337070465,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.03,
+        "ci95_high": 0.17,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 17,
+        "discordant_worsened": 10,
+        "family_size": 9,
+        "holm_p": 0.701860995963216,
+        "holm_adjusted_p": 0.701860995963216,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_shuffled",
+        "comparison": "h3real - h3shuffled",
+        "metric": "nondanger_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.56,
+        "mean_b": 0.65,
+        "delta_b_minus_a": 0.09,
+        "raw_p": 0.175465248990804,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.02,
+        "ci95_high": 0.2,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 22,
+        "discordant_worsened": 13,
+        "family_size": 9,
+        "holm_p": 0.701860995963216,
+        "holm_adjusted_p": 0.701860995963216,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "total_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.3854964285714285,
+        "mean_b": 0.3928660714285715,
+        "delta_b_minus_a": 0.007369642857142856,
+        "raw_p": 0.9143769498139402,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.062325089285714286,
+        "ci95_high": 0.07901325892857135,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "utility",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.051031190476190466,
+        "mean_b": 0.06325297619047618,
+        "delta_b_minus_a": 0.012221785714285711,
+        "raw_p": 0.8539793092889301,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.03205793154761906,
+        "ci95_high": 0.05719824702380947,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "turns",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 6.48,
+        "mean_b": 5.94,
+        "delta_b_minus_a": -0.54,
+        "raw_p": 0.05180133204945463,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -1.02,
+        "ci95_high": -0.06,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.41441065639563707,
+        "holm_adjusted_p": 0.41441065639563707,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "tests",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 1.34,
+        "mean_b": 1.5,
+        "delta_b_minus_a": 0.16,
+        "raw_p": 0.03740708255219964,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": 0.01,
+        "ci95_high": 0.31,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 0.3366637429697968,
+        "holm_adjusted_p": 0.3366637429697968,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "evidence_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.2958214285714285,
+        "mean_b": 0.29788690476190477,
+        "delta_b_minus_a": 0.002065476190476191,
+        "raw_p": 0.9725736339505435,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.042304315476190464,
+        "ci95_high": 0.047518154761904755,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "plan_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.3275,
+        "mean_b": 0.38,
+        "delta_b_minus_a": 0.0525,
+        "raw_p": 0.2236551664620796,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.02,
+        "ci95_high": 0.125,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "strict_accuracy",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.3,
+        "mean_b": 0.3,
+        "delta_b_minus_a": 0,
+        "raw_p": 1,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.09,
+        "ci95_high": 0.1,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 12,
+        "discordant_worsened": 12,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "pass_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.23,
+        "mean_b": 0.25,
+        "delta_b_minus_a": 0.02,
+        "raw_p": 0.8450189828872681,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.08,
+        "ci95_high": 0.12,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 14,
+        "discordant_worsened": 12,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_real_vs_h0",
+        "comparison": "h3real - h0",
+        "metric": "nondanger_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.59,
+        "mean_b": 0.65,
+        "delta_b_minus_a": 0.06,
+        "raw_p": 0.4050322461407632,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.06,
+        "ci95_high": 0.18,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 21,
+        "discordant_worsened": 15,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "total_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.3854964285714285,
+        "mean_b": 0.3304928571428571,
+        "delta_b_minus_a": -0.05500357142857143,
+        "raw_p": 0.14802770822948041,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.11826794642857143,
+        "ci95_high": 0.007216696428571215,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "utility",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.051031190476190466,
+        "mean_b": 0.017829047619047602,
+        "delta_b_minus_a": -0.03320214285714286,
+        "raw_p": 0.11159350751064434,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.0738110119047619,
+        "ci95_high": 0.006899696428571373,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "turns",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 6.48,
+        "mean_b": 6.64,
+        "delta_b_minus_a": 0.16,
+        "raw_p": 0.6795446138015717,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.33,
+        "ci95_high": 0.65,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "tests",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 1.34,
+        "mean_b": 1.22,
+        "delta_b_minus_a": -0.12,
+        "raw_p": 0.13033908772162872,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.27,
+        "ci95_high": 0.03,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "evidence_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.2958214285714285,
+        "mean_b": 0.2749761904761905,
+        "delta_b_minus_a": -0.020845238095238097,
+        "raw_p": 0.4238633854358763,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.06678571428571427,
+        "ci95_high": 0.02426190476190476,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "plan_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.3275,
+        "mean_b": 0.29,
+        "delta_b_minus_a": -0.0375,
+        "raw_p": 0.2216939173095187,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.1025,
+        "ci95_high": 0.0275,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "strict_accuracy",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.3,
+        "mean_b": 0.25,
+        "delta_b_minus_a": -0.05,
+        "raw_p": 0.332305908203125,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.13,
+        "ci95_high": 0.03,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 6,
+        "discordant_worsened": 11,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "pass_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.23,
+        "mean_b": 0.18,
+        "delta_b_minus_a": -0.05,
+        "raw_p": 0.42435622215270996,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.15,
+        "ci95_high": 0.05,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 10,
+        "discordant_worsened": 15,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "placebo_shuffled_vs_h0",
+        "comparison": "h3shuffled - h0",
+        "metric": "nondanger_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.59,
+        "mean_b": 0.56,
+        "delta_b_minus_a": -0.03,
+        "raw_p": 0.735878800856881,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.15,
+        "ci95_high": 0.09,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 16,
+        "discordant_worsened": 19,
+        "family_size": 9,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      }
+    ],
+    "boundary": "Same card-count and truncation policy; exact token/character length matching is not established. Frozen-bank rerun does not identify a relevance benefit."
+  },
+  "A6": {
+    "n_grid": 66,
+    "n_interior": 36,
+    "ranking_preserved": 60,
+    "interior_ranking_preserved": 35,
+    "heldout_S_positive": 66,
+    "heldout_U_positive": 66,
+    "E_strictly_increasing": 58,
+    "E3_gt_E0": 66,
+    "baseline_rank": [
+      "GLM-5",
+      "Kimi-K2.5",
+      "Qwen3.5-122B-A10B",
+      "Qwen-Turbo"
+    ],
+    "swaps": [
+      {
+        "w_diag": 0,
+        "w_evidence": 0,
+        "w_plan": 1,
+        "interior": false,
+        "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+        "rank_preserved": false,
+        "heldout_delta_S": 0.10125,
+        "heldout_delta_U": 0.07954999999999998,
+        "E_strictly_increasing": true,
+        "E3_minus_E0_S": 0.17
+      },
+      {
+        "w_diag": 0,
+        "w_evidence": 0.1,
+        "w_plan": 0.9,
+        "interior": false,
+        "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+        "rank_preserved": false,
+        "heldout_delta_S": 0.0918113095238095,
+        "heldout_delta_U": 0.07388678571428571,
+        "E_strictly_increasing": true,
+        "E3_minus_E0_S": 0.158563253968254
+      },
+      {
+        "w_diag": 0,
+        "w_evidence": 0.2,
+        "w_plan": 0.8,
+        "interior": false,
+        "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+        "rank_preserved": false,
+        "heldout_delta_S": 0.08237261904761911,
+        "heldout_delta_U": 0.06822357142857143,
+        "E_strictly_increasing": true,
+        "E3_minus_E0_S": 0.14712650793650803
+      },
+      {
+        "w_diag": 0.1,
+        "w_evidence": 0,
+        "w_plan": 0.9,
+        "interior": false,
+        "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+        "rank_preserved": false,
+        "heldout_delta_S": 0.09649999999999997,
+        "heldout_delta_U": 0.07669999999999999,
+        "E_strictly_increasing": true,
+        "E3_minus_E0_S": 0.17975
+      },
+      {
+        "w_diag": 0.1,
+        "w_evidence": 0.1,
+        "w_plan": 0.8,
+        "interior": true,
+        "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+        "rank_preserved": false,
+        "heldout_delta_S": 0.08706130952380958,
+        "heldout_delta_U": 0.07103678571428572,
+        "E_strictly_increasing": true,
+        "E3_minus_E0_S": 0.16831325396825403
+      },
+      {
+        "w_diag": 0.2,
+        "w_evidence": 0,
+        "w_plan": 0.8,
+        "interior": false,
+        "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+        "rank_preserved": false,
+        "heldout_delta_S": 0.09175,
+        "heldout_delta_U": 0.07385,
+        "E_strictly_increasing": true,
+        "E3_minus_E0_S": 0.18950000000000003
+      }
+    ],
+    "utility_turn_divisor": 10,
+    "strict_accuracy_weight_invariant": true,
+    "heldout_n": 200,
+    "named_weightings_file": "weight_sensitivity_named.csv"
+  },
+  "A7": {
+    "n_pairs": 100,
+    "mdt_triggered": 85,
+    "files": "Only shard0of6 through shard5of6",
+    "results": [
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "total_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.5741797619047619,
+        "mean_b": 0.5417994047619049,
+        "delta_b_minus_a": -0.032380357142857134,
+        "raw_p": 0.1293957864570329,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.08348462797619048,
+        "ci95_high": 0.018717127976190438,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "diagnosis_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.53,
+        "mean_b": 0.5175,
+        "delta_b_minus_a": -0.0125,
+        "raw_p": 0.719189927035677,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.0875,
+        "ci95_high": 0.0625,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "evidence_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.5639325396825398,
+        "mean_b": 0.4934980158730159,
+        "delta_b_minus_a": -0.07043452380952381,
+        "raw_p": 0.006200774713170975,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.11419732142857142,
+        "ci95_high": -0.02785897817460319,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 0.05580697241853877,
+        "holm_adjusted_p": 0.05580697241853877,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "plan_score",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.7,
+        "mean_b": 0.675,
+        "delta_b_minus_a": -0.025,
+        "raw_p": 0.4758499332589601,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.085,
+        "ci95_high": 0.0325,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "utility",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.16530785714285712,
+        "mean_b": 0.13911297619047616,
+        "delta_b_minus_a": -0.026194880952380952,
+        "raw_p": 0.13527281139585612,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.058375467261904755,
+        "ci95_high": 0.005187050595238087,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "turns",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 4.71,
+        "mean_b": 6.04,
+        "delta_b_minus_a": 1.33,
+        "raw_p": 3.0961793273721816e-11,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": 1.0397500000000002,
+        "ci95_high": 1.63,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 3.4057972601093997e-10,
+        "holm_adjusted_p": 3.4057972601093997e-10,
+        "significant_holm_0_05": true
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "tests",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 2.28,
+        "mean_b": 1.72,
+        "delta_b_minus_a": -0.56,
+        "raw_p": 1.0357838557459656e-9,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.71,
+        "ci95_high": -0.42,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 1.0357838557459655e-8,
+        "holm_adjusted_p": 1.0357838557459655e-8,
+        "significant_holm_0_05": true
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "invalid_test_rate",
+        "n": 100,
+        "test": "paired Wilcoxon",
+        "mean_a": 0.09,
+        "mean_b": 0.07833333333333332,
+        "delta_b_minus_a": -0.01166666666666666,
+        "raw_p": 0.4355908781050277,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.05499999999999999,
+        "ci95_high": 0.035,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "strict_accuracy",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.32,
+        "mean_b": 0.33,
+        "delta_b_minus_a": 0.01,
+        "raw_p": 1,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.08,
+        "ci95_high": 0.11,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 12,
+        "discordant_worsened": 11,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "pass_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.45,
+        "mean_b": 0.41,
+        "delta_b_minus_a": -0.04,
+        "raw_p": 0.5412561893463135,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.14,
+        "ci95_high": 0.06,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 10,
+        "discordant_worsened": 14,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      },
+      {
+        "family_id": "strong_mdt_itt",
+        "comparison": "MDT - NoMDT",
+        "metric": "nondanger_rate",
+        "n": 100,
+        "test": "exact McNemar",
+        "mean_a": 0.8,
+        "mean_b": 0.78,
+        "delta_b_minus_a": -0.02,
+        "raw_p": 0.803619384765625,
+        "analysis_role": "reported paired comparison",
+        "ci95_low": -0.1,
+        "ci95_high": 0.06,
+        "bootstrap_resamples": 20000,
+        "bootstrap_seed": 7,
+        "discordant_improved": 7,
+        "discordant_worsened": 9,
+        "family_size": 11,
+        "holm_p": 1,
+        "holm_adjusted_p": 1,
+        "significant_holm_0_05": false
+      }
+    ]
+  },
+  "A8": {
+    "resource_summary": {
+      "total_api_calls_approx": 106000,
+      "components": [
+        {
+          "scope": "research including development",
+          "api_calls": 80975,
+          "basis": "recorded ledger"
+        },
+        {
+          "scope": "supplementary runs",
+          "api_calls": 23000,
+          "basis": "estimate"
+        },
+        {
+          "scope": "Kimi consultant experiment",
+          "api_calls": 1749,
+          "basis": "measured"
+        }
+      ],
+      "rows": [
+        {
+          "experiment": "E0-E3 stream run inventory",
+          "api_calls": 27524,
+          "input_tokens": 19605065,
+          "output_tokens": 3352299,
+          "elapsed_seconds": "",
+          "basis": "M/E",
+          "scope": "Calls from request-count ledger; tokens are calibrated estimates"
+        },
+        {
+          "experiment": "DeepSeek rejudge (2520 outputs)",
+          "api_calls": 2520,
+          "input_tokens": 1366386,
+          "output_tokens": 122872,
+          "elapsed_seconds": 414,
+          "basis": "M",
+          "scope": "2520 recorded outputs"
+        },
+        {
+          "experiment": "Qwen-Max resumed segment (867 outputs)",
+          "api_calls": 869,
+          "input_tokens": 510241,
+          "output_tokens": 40933,
+          "elapsed_seconds": 162.4,
+          "basis": "P",
+          "scope": "867 recorded outputs"
+        },
+        {
+          "experiment": "Same-judge retest (520 outputs)",
+          "api_calls": 520,
+          "input_tokens": 297011,
+          "output_tokens": 27735,
+          "elapsed_seconds": 125.1,
+          "basis": "M",
+          "scope": "520 recorded outputs"
+        },
+        {
+          "experiment": "Frozen-bank control (300 episodes)",
+          "api_calls": 3624,
+          "input_tokens": 2511815,
+          "output_tokens": 278787,
+          "elapsed_seconds": "",
+          "basis": "M",
+          "scope": "All three arms"
+        },
+        {
+          "experiment": "Interface intervention (640 episodes)",
+          "api_calls": 6416,
+          "input_tokens": 4203181,
+          "output_tokens": 6904473,
+          "elapsed_seconds": "",
+          "basis": "M",
+          "scope": "640 completed episodes"
+        },
+        {
+          "experiment": "Kimi-consultant arm (100 episodes)",
+          "api_calls": 1749,
+          "input_tokens": 1463390,
+          "output_tokens": 223331,
+          "elapsed_seconds": "",
+          "basis": "M",
+          "scope": "100 completed episodes"
+        },
+        {
+          "experiment": "Strong-primary MDT (200 episodes)",
+          "api_calls": 2000,
+          "input_tokens": "",
+          "output_tokens": "",
+          "elapsed_seconds": "",
+          "basis": "E",
+          "scope": "Estimated calls for both arms"
+        }
+      ]
+    }
+  },
+  "case_record_boundary": "Released 700 records represent 688 unique full contents. Stream:500 records/488 contents; heldout:200/200 with zero stream overlap; cross-sectional:100/88; model comparison:80/68. Inference pairs/resamples case records, not deduplicated independent contents.",
+  "limitations": [
+    "Physician direction contrasts are descriptive group-mean signs, not paired inferential tests.",
+    "Physician audit tables use published aggregates; completed individual ratings are confidential.",
+    "Held-out subset rejudging does not establish judge stability for every final 200-case output.",
+    "Utility sensitivity always uses turn divisor 10; total-score sensitivity changes only outcome weights."
+  ],
+  "R7_utility_sensitivity": [
+    {
+      "setting": "default",
+      "weights_S_turns_tests_invalid": "(0.6,0.2,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 1,
+      "model": "GLM-5",
+      "utility": 0.2048422619047619
+    },
+    {
+      "setting": "default",
+      "weights_S_turns_tests_invalid": "(0.6,0.2,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 2,
+      "model": "Kimi-K2.5",
+      "utility": 0.12818526785714285
+    },
+    {
+      "setting": "default",
+      "weights_S_turns_tests_invalid": "(0.6,0.2,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 3,
+      "model": "Qwen3.5-122B-A10B",
+      "utility": 0.03616458333333331
+    },
+    {
+      "setting": "default",
+      "weights_S_turns_tests_invalid": "(0.6,0.2,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 4,
+      "model": "Qwen-Turbo",
+      "utility": 0.014187648809523803
+    },
+    {
+      "setting": "outcome_heavy",
+      "weights_S_turns_tests_invalid": "(0.8,0.1,0.1,0.0)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 1,
+      "model": "GLM-5",
+      "utility": 0.3788869047619048
+    },
+    {
+      "setting": "outcome_heavy",
+      "weights_S_turns_tests_invalid": "(0.8,0.1,0.1,0.0)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 2,
+      "model": "Kimi-K2.5",
+      "utility": 0.32049702380952383
+    },
+    {
+      "setting": "outcome_heavy",
+      "weights_S_turns_tests_invalid": "(0.8,0.1,0.1,0.0)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 3,
+      "model": "Qwen3.5-122B-A10B",
+      "utility": 0.192525
+    },
+    {
+      "setting": "outcome_heavy",
+      "weights_S_turns_tests_invalid": "(0.8,0.1,0.1,0.0)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 4,
+      "model": "Qwen-Turbo",
+      "utility": 0.13981964285714285
+    },
+    {
+      "setting": "turn_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.4,0.4,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 1,
+      "model": "GLM-5",
+      "utility": -0.008827380952380956
+    },
+    {
+      "setting": "turn_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.4,0.4,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 2,
+      "model": "Kimi-K2.5",
+      "utility": -0.10220982142857142
+    },
+    {
+      "setting": "turn_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.4,0.4,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 3,
+      "model": "Qwen-Turbo",
+      "utility": -0.1608610119047619
+    },
+    {
+      "setting": "turn_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.4,0.4,0.1,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 4,
+      "model": "Qwen3.5-122B-A10B",
+      "utility": -0.19890416666666666
+    },
+    {
+      "setting": "test_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.3,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 1,
+      "model": "GLM-5",
+      "utility": 0.038924107142857156
+    },
+    {
+      "setting": "test_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.3,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 2,
+      "model": "Qwen3.5-122B-A10B",
+      "utility": 0.018130208333333335
+    },
+    {
+      "setting": "test_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.3,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 3,
+      "model": "Kimi-K2.5",
+      "utility": -0.04417894345238094
+    },
+    {
+      "setting": "test_cost_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.3,0.1)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 4,
+      "model": "Qwen-Turbo",
+      "utility": -0.05158668154761904
+    },
+    {
+      "setting": "invalid_action_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.1,0.3)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 1,
+      "model": "GLM-5",
+      "utility": 0.1772574404761905
+    },
+    {
+      "setting": "invalid_action_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.1,0.3)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 2,
+      "model": "Kimi-K2.5",
+      "utility": 0.0891543898809524
+    },
+    {
+      "setting": "invalid_action_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.1,0.3)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 3,
+      "model": "Qwen3.5-122B-A10B",
+      "utility": 0.076046875
+    },
+    {
+      "setting": "invalid_action_heavy",
+      "weights_S_turns_tests_invalid": "(0.5,0.1,0.1,0.3)",
+      "turn_divisor": 10,
+      "test_divisor": 3,
+      "rank": 4,
+      "model": "Qwen-Turbo",
+      "utility": 0.025496651785714287
+    }
+  ],
+  "display_labels": {
+    "A_无MDT": "No MDT",
+    "B_同模型MDT": "Qwen-Turbo consultant",
+    "C_强模型MDT": "Kimi-K2.5 consultant"
+  },
+  "model_identity_notes": {
+    "original_mdt": "The final 100-case study compares no MDT, a Qwen-Turbo consultant and a Kimi-K2.5 consultant with a Qwen-Turbo primary. The consultant is selected through models.mdt_expert.",
+    "strong_primary_mdt": "Primary and effective single consultant are glm-5; kimi-k2.5 is manager. Raw keys are retained for provenance."
+  }
+}

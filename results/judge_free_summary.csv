@@ -1,0 +1,11 @@
+condition,n,judge_free_strict,reported_strict,downgraded,upgraded,condition_display
+Qwen-Turbo,80,0.1125,0.1,1,0,Qwen-Turbo
+Qwen3.5-122B-A10B,80,0.175,0.15,2,0,Qwen3.5-122B-A10B
+GLM-5,80,0.3875,0.375,1,0,GLM-5
+Kimi-K2.5,80,0.2625,0.2625,0,0,Kimi-K2.5
+E0,500,0.144,0.092,26,0,E0
+E1,500,0.176,0.136,20,0,E1
+E2,500,0.346,0.276,35,0,E2
+E3,500,0.408,0.342,33,0,E3
+H0,100,0.34,0.29,5,0,H0
+H3,100,0.37,0.33,4,0,H3

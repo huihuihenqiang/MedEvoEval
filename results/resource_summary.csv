@@ -1,0 +1,9 @@
+experiment,api_calls,input_tokens,output_tokens,elapsed_seconds,basis,scope
+E0-E3 stream run inventory,27524,19605065,3352299,,M/E,Calls from request-count ledger; tokens are calibrated estimates
+DeepSeek rejudge (2520 outputs),2520,1366386,122872,414.0,M,2520 recorded outputs
+Qwen-Max resumed segment (867 outputs),869,510241,40933,162.4,P,867 recorded outputs
+Same-judge retest (520 outputs),520,297011,27735,125.1,M,520 recorded outputs
+Frozen-bank control (300 episodes),3624,2511815,278787,,M,All three arms
+Interface intervention (640 episodes),6416,4203181,6904473,,M,640 completed episodes
+Kimi-consultant arm (100 episodes),1749,1463390,223331,,M,100 completed episodes
+Strong-primary MDT (200 episodes),2000,,,,E,Estimated calls for both arms

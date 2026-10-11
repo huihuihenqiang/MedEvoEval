@@ -1,0 +1,187 @@
+[
+  {
+    "path": "inputs/ablation.json",
+    "sha256": "d52a284039cf954a18243b465e1c18cef2323135af86475b61832d925e096b6d",
+    "bytes": 158156,
+    "record_count": 500
+  },
+  {
+    "path": "inputs/bwt.json",
+    "sha256": "392ec2fd28466a06f90d45194fab52b3f1dc81b162957f2f5954a381a97a54bb",
+    "bytes": 449452,
+    "record_count": 900
+  },
+  {
+    "path": "inputs/dynamic_models.json",
+    "sha256": "d34a8d3e085d8ca61c9a5a0a01a2203c83a9f12a471e6f3d057d776907575657",
+    "bytes": 157425,
+    "record_count": 320
+  },
+  {
+    "path": "inputs/heldout_n200.json",
+    "sha256": "a1c2d0036ad2b8b96bd731feecaf94693f1e76379ea31062a08d3adecefd3aea",
+    "bytes": 192214,
+    "record_count": 400
+  },
+  {
+    "path": "inputs/interface_ab.json",
+    "sha256": "c6ccda3e42c6f4bb3e24e4dce60d5d3d890068bdde57f9dafc39f597918e486d",
+    "bytes": 464650,
+    "record_count": 640
+  },
+  {
+    "path": "inputs/interface_acceptance.json",
+    "sha256": "9d983642279d73e9dc1a32f9ba1736459aedbc2d33e8fb6027468e12177c1b3c",
+    "bytes": 2491,
+    "record_count": null
+  },
+  {
+    "path": "inputs/interface_telemetry_audit.json",
+    "sha256": "0fa39efe87e8898bfb596b93cfa63cd9867882f3099f1767ab07db284a678490",
+    "bytes": 6004,
+    "record_count": null
+  },
+  {
+    "path": "inputs/interface_tests_cached.json",
+    "sha256": "30003ee11b0c8bb3cf7742ab819f6b3f494c01c802f228512a0857f05180989a",
+    "bytes": 6083,
+    "record_count": 46
+  },
+  {
+    "path": "inputs/interface_usage_summary.json",
+    "sha256": "e38382a87f2280d4d226215fd2c0242cbe9ea6b902e6b32bdc611ea0747065d2",
+    "bytes": 6581,
+    "record_count": null
+  },
+  {
+    "path": "inputs/judge_free.json",
+    "sha256": "d45d945dc822615306840732d57d262ec6cd820f120d070af0177d3137ffefe3",
+    "bytes": 1045328,
+    "record_count": 2520
+  },
+  {
+    "path": "inputs/mdt.json",
+    "sha256": "153f16c038affd81afc1af8678fe39d32e9eb6d3785aa768126f641704fa4593",
+    "bytes": 183934,
+    "record_count": 300,
+    "conditions": {
+      "A_无MDT": {
+        "n": 100,
+        "primary": "qwen-turbo",
+        "consultant": null
+      },
+      "B_同模型MDT": {
+        "n": 100,
+        "primary": "qwen-turbo",
+        "consultant": "qwen-turbo"
+      },
+      "C_强模型MDT": {
+        "n": 100,
+        "primary": "qwen-turbo",
+        "consultant": "kimi-k2.5"
+      }
+    }
+  },
+  {
+    "path": "inputs/mdt_behavior.json",
+    "sha256": "e527d761026aec1b3d86fa4933578ccd4371fe8aa52a96384e99fbab06866e46",
+    "bytes": 36953,
+    "record_count": 300
+  },
+  {
+    "path": "inputs/memory_scale_cached.json",
+    "sha256": "6d70922b12af2611a542036ce5d18f6be2a1c51d93e9f3c6ac0395f0a2b1f6cb",
+    "bytes": 14835,
+    "record_count": null
+  },
+  {
+    "path": "inputs/placebo_h0.json",
+    "sha256": "22b97c189bad593cbf1735b73932b99badb9047c7fdf0e8943b0bc69143a02f1",
+    "bytes": 49356,
+    "record_count": 100
+  },
+  {
+    "path": "inputs/placebo_h3real.json",
+    "sha256": "43ca6a60b39b135378eccf8cb564c492bf6ab2195248d75b622e5dc44c8638cd",
+    "bytes": 49449,
+    "record_count": 100
+  },
+  {
+    "path": "inputs/placebo_h3shuffled.json",
+    "sha256": "4bfb9e9f18074621318fc2782fa2f8edbf693c424cc3567173c65271420dc5e9",
+    "bytes": 50039,
+    "record_count": 100
+  },
+  {
+    "path": "inputs/rejudge_deepseek.json",
+    "sha256": "1b4a0f207f12d871ba1dff4d59abf04c8821e6a63a3af2069d7f911ace89d801",
+    "bytes": 1786100,
+    "record_count": 2520
+  },
+  {
+    "path": "inputs/rejudge_kimiretest.json",
+    "sha256": "a91a1a048ef2dbbb73ca79dc83e56218d4c8171795a47c79ee0da350e02d7cf4",
+    "bytes": 372874,
+    "record_count": 520
+  },
+  {
+    "path": "inputs/rejudge_qwenmax.json",
+    "sha256": "c0d483790e72cea877e57e68ca4e38d99fa6f35be92a23a285afb3434333ac05",
+    "bytes": 1773615,
+    "record_count": 2520
+  },
+  {
+    "path": "inputs/resource_summary.json",
+    "sha256": "25170733fbe72966536f9444a4b5d9c2cc029d3c34878f185751c6b4d202ac88",
+    "bytes": 2507,
+    "record_count": null
+  },
+  {
+    "path": "inputs/source_family_template.json",
+    "sha256": "ec8492e14cfe10579ed59b3331c7879c7aff1bfad6cd089178275faa9dd74055",
+    "bytes": 4346,
+    "record_count": 12
+  },
+  {
+    "path": "inputs/stage_metrics.json",
+    "sha256": "d21affee591c3457f6d690979d0558675e3d53793df4626099bb7d28b5297366",
+    "bytes": 8043,
+    "record_count": 20
+  },
+  {
+    "path": "inputs/stream_memory.json",
+    "sha256": "b74f4b9a4f6509eee62d24c156fbd234a7ade44c802cad1a6029925227e686f5",
+    "bytes": 974941,
+    "record_count": 2000
+  },
+  {
+    "path": "inputs/strong_mdt.json",
+    "sha256": "958a662430939885e7d0888d2f50fb3addfe09feed67b827e24e7eb3f793eabd",
+    "bytes": 51281,
+    "record_count": 100
+  },
+  {
+    "path": "inputs/strong_nomdt.json",
+    "sha256": "a22772db118ba890f11f59338d73592b3c787d3b7bdaaa923caf56e71a311ff0",
+    "bytes": 51661,
+    "record_count": 100
+  },
+  {
+    "path": "inputs/update_operational_records.json",
+    "sha256": "00551c44d5c7a553fafa339bb9437fb397159f18d72a615fefeb5392535a0f16",
+    "bytes": 284780,
+    "record_count": 1000
+  },
+  {
+    "path": "inputs/physician_review_summary.json",
+    "sha256": "5eb33a64b0c5bc9bca03647fc4630b784cce4b070791521f05e5a433485fe75b",
+    "bytes": 9067,
+    "record_count": null
+  },
+  {
+    "path": "inputs/transformation_audit_summary.json",
+    "sha256": "290e8c34bb8aabd56558cf16f684229cfa8a2c9e68f5bf85e3a351df6019629b",
+    "bytes": 987,
+    "record_count": null
+  }
+]

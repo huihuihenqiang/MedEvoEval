@@ -1,0 +1,134 @@
+[
+  {
+    "family_id": "update_trend_g0",
+    "family_label": "Continual-update G0 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "total_score_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": -0.24444444444444444,
+    "raw_p": 0.37109336952269745
+  },
+  {
+    "family_id": "update_trend_g0",
+    "family_label": "Continual-update G0 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "utility_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": 0.022222222222222223,
+    "raw_p": 1.0
+  },
+  {
+    "family_id": "update_trend_g0",
+    "family_label": "Continual-update G0 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "pass_rate",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": -0.1111111111111111,
+    "raw_p": 0.7123132934178222
+  },
+  {
+    "family_id": "update_trend_g0",
+    "family_label": "Continual-update G0 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "exact_dx_rate",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": -0.022222222222222223,
+    "raw_p": 1.0
+  },
+  {
+    "family_id": "update_trend_g0",
+    "family_label": "Continual-update G0 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "turns_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": -0.022222222222222223,
+    "raw_p": 1.0
+  },
+  {
+    "family_id": "update_trend_g0",
+    "family_label": "Continual-update G0 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "tests_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": 0.1111111111111111,
+    "raw_p": 0.7183477583478872
+  },
+  {
+    "family_id": "update_trend_g1",
+    "family_label": "Continual-update G1 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "total_score_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": 0.37777777777777777,
+    "raw_p": 0.15240628395674927
+  },
+  {
+    "family_id": "update_trend_g1",
+    "family_label": "Continual-update G1 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "utility_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": 0.28888888888888886,
+    "raw_p": 0.28313087066234666
+  },
+  {
+    "family_id": "update_trend_g1",
+    "family_label": "Continual-update G1 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "pass_rate",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": 0.37777777777777777,
+    "raw_p": 0.14911305513815654
+  },
+  {
+    "family_id": "update_trend_g1",
+    "family_label": "Continual-update G1 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "exact_dx_rate",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": 0.3111111111111111,
+    "raw_p": 0.23920959658474716
+  },
+  {
+    "family_id": "update_trend_g1",
+    "family_label": "Continual-update G1 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "turns_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": -0.4444444444444444,
+    "raw_p": 0.0879614743080801
+  },
+  {
+    "family_id": "update_trend_g1",
+    "family_label": "Continual-update G1 six-endpoint trend diagnostics",
+    "analysis_role": "descriptive",
+    "comparison": "T1...T10",
+    "metric": "tests_mean",
+    "test": "Mann-Kendall trend (descriptive)",
+    "n": "10",
+    "delta_b_minus_a": -0.15555555555555556,
+    "raw_p": 0.5885063552717107
+  }
+]

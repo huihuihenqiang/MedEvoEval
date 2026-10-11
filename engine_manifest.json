@@ -1,0 +1,85 @@
+{
+  "source_project": "MedAgentSim",
+  "license": "CC-BY-NC-SA-4.0",
+  "policy": "Clinical episode engine with turn-cost divisor equal to action budget and consultant selected through models.mdt_expert.",
+  "files": [
+    {
+      "path": "medsim/__init__.py",
+      "sha256": "69f9ffc9b66a6df371080d4f2a2f68e251dac390d1a3a1ebd3091d3ad837d138"
+    },
+    {
+      "path": "medsim/run_clinic.py",
+      "sha256": "4f000d6976fe1f48e8007d41ea5ab99f9e73b2dc035b7ee5bf7af7a08612020f"
+    },
+    {
+      "path": "medsim/query_model.py",
+      "sha256": "af6695bb49e529d7360f526874b90ce0857bdf386429e4b63a7d3b8ef7f2c081"
+    },
+    {
+      "path": "medsim/clinical/__init__.py",
+      "sha256": "5941e98484130c745b72573335600e0f37bfae00807c91d1b5e34cbc4e64e399"
+    },
+    {
+      "path": "medsim/clinical/agent_npc.py",
+      "sha256": "30a1ec8848a58037ac0439604bf2ac0f2508b1c768f5266dd716e75dad8fbc84"
+    },
+    {
+      "path": "medsim/clinical/batch_reporting.py",
+      "sha256": "48d27f61738e87b4b75981d81315d18a84c946e39a2a9785808f7f6edbbea92d"
+    },
+    {
+      "path": "medsim/clinical/case_adapter.py",
+      "sha256": "ff6c96f0bfd7ad2b85349a79fcaadc58ef2a1e5481eec948ba8b524d30e55b85"
+    },
+    {
+      "path": "medsim/clinical/config.py",
+      "sha256": "a043377b196a43c78afd265fbdf9878701e361fd72a64d0ea212c7bbae6169af"
+    },
+    {
+      "path": "medsim/clinical/context_builder.py",
+      "sha256": "592b50260a3ff05f7b4f971a6166499f435587e02c28dedc499e3455d8107389"
+    },
+    {
+      "path": "medsim/clinical/experiment4.py",
+      "sha256": "f7aff1930600a4fb16ea9dc0824ff741878506923a343876e9cf3e229634f78d"
+    },
+    {
+      "path": "medsim/clinical/interface_normalization.py",
+      "sha256": "c222cf721944e18a8eb6625ed358acf048d01a38d5bd73dd6d64ffe3479cd9ca"
+    },
+    {
+      "path": "medsim/clinical/llm_io.py",
+      "sha256": "2c8f11fdba33be07ec39690be3d4ad0198cee2b9e38a53ca7417a0724b0324c2"
+    },
+    {
+      "path": "medsim/clinical/memory.py",
+      "sha256": "e47978c01dd02be613135b21b098e03a5e4fd4d40ddea93a0152b96e41632bf4"
+    },
+    {
+      "path": "medsim/clinical/metrics.py",
+      "sha256": "ebb4ac84bac27437f4892ff7c1b652386a4f17493dee69975696de2ef7e670b6",
+      "source_sha256": "71c9ae4213cb99626da37b833cf4026d8c98ab3b83a1fe3290ba55076677ad74",
+      "change": "CT10 turn-cost normalization correction only"
+    },
+    {
+      "path": "medsim/clinical/orchestrator.py",
+      "sha256": "ca6da08ce5f60b5edf887c0c2efb72650210e0995e14626423181e30ba377c9f"
+    },
+    {
+      "path": "medsim/clinical/prompts.py",
+      "sha256": "a5f585e55e7ba6fe488301272385be4cd00c98ea6d46e75c240656ced0a00c5d"
+    },
+    {
+      "path": "medsim/clinical/schema.py",
+      "sha256": "43bf7d482afbf942d7eb4d3a702ca646074f18daaad4858644d624d109f57467"
+    },
+    {
+      "path": "medsim/clinical/simulacra_bridge.py",
+      "sha256": "e2edd5bf822039fbfb38b9061d0755d4ed202f7693498b8eeb9e8441e5bc7a5e"
+    },
+    {
+      "path": "medsim/clinical/writers.py",
+      "sha256": "47042df70219e82edaaa20fd972e9250b0337685d4864b285c788e0c707927db"
+    }
+  ]
+}

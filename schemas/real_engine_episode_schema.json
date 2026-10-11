@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MedEvoEval real engine episode (separate from toy schema)",
+  "type": "object",
+  "required": [
+    "episode_id",
+    "scenario_id",
+    "run_id",
+    "full_dialogue",
+    "event_log",
+    "metrics",
+    "mdt_called"
+  ],
+  "properties": {
+    "episode_id": {
+      "type": "string"
+    },
+    "scenario_id": {
+      "type": "integer"
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "full_dialogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "speaker",
+          "text"
+        ],
+        "properties": {
+          "speaker": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "event_log": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "mdt_called": {
+      "type": "boolean"
+    },
+    "consultant_opinion": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

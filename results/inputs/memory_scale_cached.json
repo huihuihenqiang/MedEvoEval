@@ -1,0 +1,575 @@
+{
+  "token_calibration": {
+    "method": "provider-reported prompt_tokens / exact logged prompt characters, pooled over the three placebo conditions (qwen-turbo doctor+patient, kimi-k2.5 manager)",
+    "per_condition": [
+      {
+        "condition": "h0",
+        "logged_prompts": 1265,
+        "logged_chars": 1547272,
+        "api_calls": 1238,
+        "api_prompt_tokens": 751220,
+        "tokens_per_char": 0.4855
+      },
+      {
+        "condition": "h3real",
+        "logged_prompts": 1138,
+        "logged_chars": 1588986,
+        "api_calls": 1110,
+        "api_prompt_tokens": 800348,
+        "tokens_per_char": 0.5037
+      },
+      {
+        "condition": "h3shuffled",
+        "logged_prompts": 1307,
+        "logged_chars": 1896933,
+        "api_calls": 1276,
+        "api_prompt_tokens": 960247,
+        "tokens_per_char": 0.5062
+      }
+    ],
+    "pooled_tokens_per_char": 0.4991,
+    "pooled_chars_per_token": 2.004,
+    "caveat": "logged prompt count and provider call count differ slightly (retries are logged once per attempt); treat as a ±few-percent calibration, not an exact tokenizer"
+  },
+  "card_level": {
+    "success_kb": {
+      "n_cards": 341,
+      "chars_before_truncation": {
+        "n": 341,
+        "mean": 301.1,
+        "median": 296.0,
+        "q25": 272.0,
+        "q75": 329.0,
+        "iqr": 57.0,
+        "p95": 395.0,
+        "max": 481
+      },
+      "chars_after_truncation": {
+        "n": 341,
+        "mean": 301.1,
+        "median": 296.0,
+        "q25": 272.0,
+        "q75": 329.0,
+        "iqr": 57.0,
+        "p95": 395.0,
+        "max": 481
+      },
+      "est_tokens_after_truncation": {
+        "n": 341,
+        "mean": 150.3,
+        "median": 147.7,
+        "q25": 135.8,
+        "q75": 164.2,
+        "iqr": 28.4,
+        "p95": 197.1,
+        "max": 240.1
+      },
+      "whitespace_tokens_per_card": {
+        "n": 341,
+        "mean": 2.4,
+        "median": 2.0,
+        "q25": 2.0,
+        "q75": 2.0,
+        "iqr": 0.0,
+        "p95": 5.0,
+        "max": 10
+      },
+      "cards_actually_truncated": 0,
+      "truncation_rate": 0.0,
+      "exact_duplicate_texts": 0,
+      "duplicate_rate": 0.0
+    },
+    "correction_kb": {
+      "n_cards": 1263,
+      "chars_before_truncation": {
+        "n": 1263,
+        "mean": 360.0,
+        "median": 358.0,
+        "q25": 314.0,
+        "q75": 400.0,
+        "iqr": 86.0,
+        "p95": 482.8,
+        "max": 663
+      },
+      "chars_after_truncation": {
+        "n": 1263,
+        "mean": 360.0,
+        "median": 358.0,
+        "q25": 314.0,
+        "q75": 400.0,
+        "iqr": 86.0,
+        "p95": 482.8,
+        "max": 663
+      },
+      "est_tokens_after_truncation": {
+        "n": 1263,
+        "mean": 179.7,
+        "median": 178.7,
+        "q25": 156.7,
+        "q75": 199.6,
+        "iqr": 42.9,
+        "p95": 241.0,
+        "max": 330.9
+      },
+      "whitespace_tokens_per_card": {
+        "n": 1263,
+        "mean": 2.5,
+        "median": 2.0,
+        "q25": 2.0,
+        "q75": 2.0,
+        "iqr": 0.0,
+        "p95": 5.0,
+        "max": 15
+      },
+      "cards_actually_truncated": 0,
+      "truncation_rate": 0.0,
+      "exact_duplicate_texts": 8,
+      "duplicate_rate": 0.0063
+    },
+    "rule_cards_kb": {
+      "n_cards": 3204,
+      "chars_before_truncation": {
+        "n": 3204,
+        "mean": 124.3,
+        "median": 128.0,
+        "q25": 98.0,
+        "q75": 154.0,
+        "iqr": 56.0,
+        "p95": 195.0,
+        "max": 332
+      },
+      "chars_after_truncation": {
+        "n": 3204,
+        "mean": 124.3,
+        "median": 128.0,
+        "q25": 98.0,
+        "q75": 154.0,
+        "iqr": 56.0,
+        "p95": 195.0,
+        "max": 332
+      },
+      "est_tokens_after_truncation": {
+        "n": 3204,
+        "mean": 62.1,
+        "median": 63.9,
+        "q25": 48.9,
+        "q75": 76.9,
+        "iqr": 27.9,
+        "p95": 97.3,
+        "max": 165.7
+      },
+      "whitespace_tokens_per_card": {
+        "n": 3204,
+        "mean": 5.0,
+        "median": 4.0,
+        "q25": 4.0,
+        "q75": 5.0,
+        "iqr": 1.0,
+        "p95": 8.0,
+        "max": 18
+      },
+      "cards_actually_truncated": 0,
+      "truncation_rate": 0.0,
+      "exact_duplicate_texts": 399,
+      "duplicate_rate": 0.1245
+    },
+    "_note": "_truncate_text keeps the first 80 whitespace-separated words (token_limit=160 // 2). Chinese cards are 1-3 whitespace tokens, so the nominal cap does not bind."
+  },
+  "turn_and_episode_level": {
+    "H0 (retrieval off)": {
+      "doctor_turns_logged": 637,
+      "cards_injected_per_turn": {
+        "n": 637,
+        "mean": 0.0,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 0.0,
+        "iqr": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "turns_with_3_cards": 0,
+      "turns_with_0_cards": 637,
+      "injected_card_chars_per_turn": {
+        "n": 637,
+        "mean": 0.0,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 0.0,
+        "iqr": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "injected_card_est_tokens_per_turn": {
+        "n": 637,
+        "mean": 0.0,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 0.0,
+        "iqr": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "total_doctor_prompt_chars_per_turn": {
+        "n": 637,
+        "mean": 1740.6,
+        "median": 1700.0,
+        "q25": 1486.0,
+        "q75": 1953.0,
+        "iqr": 467.0,
+        "p95": 2240.0,
+        "max": 2723
+      },
+      "memory_share_of_prompt_chars": 0.0,
+      "success_snippets_in_prompt": 0,
+      "correction_snippets_in_prompt": 0,
+      "distinct_cards_ever_injected": 0,
+      "card_injections_total": 0,
+      "retrieval_repeat_rate": null,
+      "most_injected_card_count": 0
+    },
+    "H3-Real (retrieval on)": {
+      "doctor_turns_logged": 594,
+      "cards_injected_per_turn": {
+        "n": 594,
+        "mean": 3.0,
+        "median": 3.0,
+        "q25": 3.0,
+        "q75": 3.0,
+        "iqr": 0.0,
+        "p95": 3.0,
+        "max": 3
+      },
+      "turns_with_3_cards": 594,
+      "turns_with_0_cards": 0,
+      "injected_card_chars_per_turn": {
+        "n": 594,
+        "mean": 322.3,
+        "median": 329.0,
+        "q25": 294.0,
+        "q75": 368.0,
+        "iqr": 74.0,
+        "p95": 419.0,
+        "max": 500
+      },
+      "injected_card_est_tokens_per_turn": {
+        "n": 594,
+        "mean": 160.9,
+        "median": 164.2,
+        "q25": 146.7,
+        "q75": 183.7,
+        "iqr": 36.9,
+        "p95": 209.1,
+        "max": 249.5
+      },
+      "total_doctor_prompt_chars_per_turn": {
+        "n": 594,
+        "mean": 2024.8,
+        "median": 1951.0,
+        "q25": 1804.0,
+        "q75": 2184.8,
+        "iqr": 380.8,
+        "p95": 2570.1,
+        "max": 3016
+      },
+      "memory_share_of_prompt_chars": 0.1592,
+      "success_snippets_in_prompt": 0,
+      "correction_snippets_in_prompt": 0,
+      "distinct_cards_ever_injected": 122,
+      "card_injections_total": 1782,
+      "retrieval_repeat_rate": 0.9315,
+      "most_injected_card_count": 219
+    },
+    "_context_growth_H3_minus_H0": {
+      "mean_doctor_prompt_chars_H0": 1740.6,
+      "mean_doctor_prompt_chars_H3": 2024.8,
+      "delta_chars": 284.2,
+      "delta_est_tokens": 141.8
+    },
+    "_note": "Measured on the frozen-bank placebo runs, the only runs with per-request prompt logs. Card *count* per turn is protocol-fixed (top-3 rule cards) and so transfers to the original runs; card *length* comes from the same bank text, minus held-out cards."
+  },
+  "bank_level": {
+    "growth_by_run": [
+      {
+        "run": "run-20260319-batch500-memory1",
+        "stage": "E1",
+        "episodes": 500,
+        "writes": {
+          "success": 48,
+          "correction": 452,
+          "rule_card": 1000
+        },
+        "bank_size_before": {
+          "success": 0,
+          "correction": 0,
+          "rule_card": 0,
+          "total": 0
+        },
+        "bank_size_after": {
+          "success": 48,
+          "correction": 452,
+          "rule_card": 1000,
+          "total": 1500
+        }
+      },
+      {
+        "run": "run-20260319-batch500-memory2",
+        "stage": "E2",
+        "episodes": 500,
+        "writes": {
+          "success": 122,
+          "correction": 378,
+          "rule_card": 1000
+        },
+        "bank_size_before": {
+          "success": 48,
+          "correction": 452,
+          "rule_card": 1000,
+          "total": 1500
+        },
+        "bank_size_after": {
+          "success": 170,
+          "correction": 830,
+          "rule_card": 2000,
+          "total": 3000
+        }
+      },
+      {
+        "run": "run-20260319-batch500-memory3",
+        "stage": "E3",
+        "episodes": 500,
+        "writes": {
+          "success": 142,
+          "correction": 358,
+          "rule_card": 1000
+        },
+        "bank_size_before": {
+          "success": 170,
+          "correction": 830,
+          "rule_card": 2000,
+          "total": 3000
+        },
+        "bank_size_after": {
+          "success": 312,
+          "correction": 1188,
+          "rule_card": 3000,
+          "total": 4500
+        }
+      },
+      {
+        "run": "run-20260323-batch1-zhanshi",
+        "stage": "demo",
+        "episodes": 1,
+        "writes": {
+          "success": 1,
+          "correction": 0,
+          "rule_card": 2
+        },
+        "bank_size_before": {
+          "success": 312,
+          "correction": 1188,
+          "rule_card": 3000,
+          "total": 4500
+        },
+        "bank_size_after": {
+          "success": 313,
+          "correction": 1188,
+          "rule_card": 3002,
+          "total": 4503
+        }
+      },
+      {
+        "run": "run-20260323-batch100-h3-retry",
+        "stage": "H3 (held-out)",
+        "episodes": 101,
+        "writes": {
+          "success": 26,
+          "correction": 75,
+          "rule_card": 202
+        },
+        "bank_size_before": {
+          "success": 313,
+          "correction": 1188,
+          "rule_card": 3002,
+          "total": 4503
+        },
+        "bank_size_after": {
+          "success": 339,
+          "correction": 1263,
+          "rule_card": 3204,
+          "total": 4806
+        }
+      }
+    ],
+    "bank_size_at_each_window_start": [
+      {
+        "stage": "E1",
+        "window": 1,
+        "bank_size_at_window_start": 0
+      },
+      {
+        "stage": "E1",
+        "window": 2,
+        "bank_size_at_window_start": 150
+      },
+      {
+        "stage": "E1",
+        "window": 3,
+        "bank_size_at_window_start": 300
+      },
+      {
+        "stage": "E1",
+        "window": 4,
+        "bank_size_at_window_start": 450
+      },
+      {
+        "stage": "E1",
+        "window": 5,
+        "bank_size_at_window_start": 600
+      },
+      {
+        "stage": "E1",
+        "window": 6,
+        "bank_size_at_window_start": 750
+      },
+      {
+        "stage": "E1",
+        "window": 7,
+        "bank_size_at_window_start": 900
+      },
+      {
+        "stage": "E1",
+        "window": 8,
+        "bank_size_at_window_start": 1050
+      },
+      {
+        "stage": "E1",
+        "window": 9,
+        "bank_size_at_window_start": 1200
+      },
+      {
+        "stage": "E1",
+        "window": 10,
+        "bank_size_at_window_start": 1350
+      },
+      {
+        "stage": "E2",
+        "window": 1,
+        "bank_size_at_window_start": 1500
+      },
+      {
+        "stage": "E2",
+        "window": 2,
+        "bank_size_at_window_start": 1650
+      },
+      {
+        "stage": "E2",
+        "window": 3,
+        "bank_size_at_window_start": 1800
+      },
+      {
+        "stage": "E2",
+        "window": 4,
+        "bank_size_at_window_start": 1950
+      },
+      {
+        "stage": "E2",
+        "window": 5,
+        "bank_size_at_window_start": 2100
+      },
+      {
+        "stage": "E2",
+        "window": 6,
+        "bank_size_at_window_start": 2250
+      },
+      {
+        "stage": "E2",
+        "window": 7,
+        "bank_size_at_window_start": 2400
+      },
+      {
+        "stage": "E2",
+        "window": 8,
+        "bank_size_at_window_start": 2550
+      },
+      {
+        "stage": "E2",
+        "window": 9,
+        "bank_size_at_window_start": 2700
+      },
+      {
+        "stage": "E2",
+        "window": 10,
+        "bank_size_at_window_start": 2850
+      },
+      {
+        "stage": "E3",
+        "window": 1,
+        "bank_size_at_window_start": 3000
+      },
+      {
+        "stage": "E3",
+        "window": 2,
+        "bank_size_at_window_start": 3150
+      },
+      {
+        "stage": "E3",
+        "window": 3,
+        "bank_size_at_window_start": 3300
+      },
+      {
+        "stage": "E3",
+        "window": 4,
+        "bank_size_at_window_start": 3450
+      },
+      {
+        "stage": "E3",
+        "window": 5,
+        "bank_size_at_window_start": 3600
+      },
+      {
+        "stage": "E3",
+        "window": 6,
+        "bank_size_at_window_start": 3750
+      },
+      {
+        "stage": "E3",
+        "window": 7,
+        "bank_size_at_window_start": 3900
+      },
+      {
+        "stage": "E3",
+        "window": 8,
+        "bank_size_at_window_start": 4050
+      },
+      {
+        "stage": "E3",
+        "window": 9,
+        "bank_size_at_window_start": 4200
+      },
+      {
+        "stage": "E3",
+        "window": 10,
+        "bank_size_at_window_start": 4350
+      }
+    ],
+    "reconstructed_final": {
+      "success": 339,
+      "correction": 1263,
+      "rule_card": 3204,
+      "total": 4806
+    },
+    "on_disk_final": {
+      "success": 341,
+      "correction": 1263,
+      "rule_card": 3204,
+      "total": 4808
+    },
+    "reconciles": true,
+    "reconcile_gap": 2,
+    "bank_size_cap": null,
+    "eviction_policy": null,
+    "_note": "These runs share namespace 'default' with no kb_root_dir override, so they append to one bank. There is no size cap and no eviction: the E3 doctor retrieves from a bank that already holds every card written by E1 and E2, and the H3 doctor from one holding E1+E2+E3.",
+    "_e0_writeback": "E0 (run-20260319-batch500, enable_retrieval=false) still wrote 500 experiences + 1000 rule cards — at that commit write-back was not gated on retrieval. E0 never retrieved, so its own scores are unaffected, and its cards are absent from the bank E1 read (cleared before E1). Internal note only."
+  }
+}

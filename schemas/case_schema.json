@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MedEvoEval Case Schema",
+  "type": "object",
+  "required": ["case_id", "patient_view", "exam_view", "manager_view"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "source": {
+      "type": "object",
+      "properties": {
+        "type": {"type": "string"},
+        "license_status": {"type": "string"},
+        "redistribution": {"type": "string"}
+      }
+    },
+    "patient_view": {
+      "type": "object",
+      "description": "Patient-facing view used by the patient simulator. Public artifact cases are toy/synthetic.",
+      "properties": {
+        "chief_complaint": {"type": "string"},
+        "demographics": {"type": "object"},
+        "history_facts": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "exam_view": {
+      "type": "object",
+      "properties": {
+        "tests": {"type": "object", "additionalProperties": {"type": "string"}},
+        "test_catalog": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "manager_view": {
+      "type": "object",
+      "properties": {
+        "ground_truth": {
+          "type": "object",
+          "properties": {
+            "diagnosis": {"type": "object"},
+            "evidence_rubric": {"type": "object"},
+            "management_rubric": {"type": "object"}
+          }
+        }
+      }
+    },
+    "available_test_catalog": {"type": "array", "items": {"type": "string"}},
+    "difficulty_tags": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}
+

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MedEvoEval Memory Entry Schema",
+  "type": "object",
+  "required": ["case_id", "memory_type", "experience", "search_text"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "visit_index": {"type": "integer", "minimum": 0},
+    "memory_type": {"type": "string", "enum": ["success", "correction", "rule_card"]},
+    "experience": {"type": "string"},
+    "rule_text": {"type": "string"},
+    "outcome": {"type": "string"},
+    "search_text": {"type": "string"}
+  },
+  "additionalProperties": true
+}
+

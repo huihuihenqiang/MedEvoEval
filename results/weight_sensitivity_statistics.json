@@ -1,0 +1,93 @@
+{
+  "n_grid": 66,
+  "n_interior": 36,
+  "ranking_preserved": 60,
+  "interior_ranking_preserved": 35,
+  "heldout_S_positive": 66,
+  "heldout_U_positive": 66,
+  "E_strictly_increasing": 58,
+  "E3_gt_E0": 66,
+  "baseline_rank": [
+    "GLM-5",
+    "Kimi-K2.5",
+    "Qwen3.5-122B-A10B",
+    "Qwen-Turbo"
+  ],
+  "swaps": [
+    {
+      "w_diag": 0.0,
+      "w_evidence": 0.0,
+      "w_plan": 1.0,
+      "interior": false,
+      "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+      "rank_preserved": false,
+      "heldout_delta_S": 0.10125,
+      "heldout_delta_U": 0.07954999999999998,
+      "E_strictly_increasing": true,
+      "E3_minus_E0_S": 0.17
+    },
+    {
+      "w_diag": 0.0,
+      "w_evidence": 0.1,
+      "w_plan": 0.9,
+      "interior": false,
+      "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+      "rank_preserved": false,
+      "heldout_delta_S": 0.0918113095238095,
+      "heldout_delta_U": 0.07388678571428571,
+      "E_strictly_increasing": true,
+      "E3_minus_E0_S": 0.158563253968254
+    },
+    {
+      "w_diag": 0.0,
+      "w_evidence": 0.2,
+      "w_plan": 0.8,
+      "interior": false,
+      "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+      "rank_preserved": false,
+      "heldout_delta_S": 0.08237261904761911,
+      "heldout_delta_U": 0.06822357142857143,
+      "E_strictly_increasing": true,
+      "E3_minus_E0_S": 0.14712650793650803
+    },
+    {
+      "w_diag": 0.1,
+      "w_evidence": 0.0,
+      "w_plan": 0.9,
+      "interior": false,
+      "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+      "rank_preserved": false,
+      "heldout_delta_S": 0.09649999999999997,
+      "heldout_delta_U": 0.07669999999999999,
+      "E_strictly_increasing": true,
+      "E3_minus_E0_S": 0.17975
+    },
+    {
+      "w_diag": 0.1,
+      "w_evidence": 0.1,
+      "w_plan": 0.8,
+      "interior": true,
+      "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+      "rank_preserved": false,
+      "heldout_delta_S": 0.08706130952380958,
+      "heldout_delta_U": 0.07103678571428572,
+      "E_strictly_increasing": true,
+      "E3_minus_E0_S": 0.16831325396825403
+    },
+    {
+      "w_diag": 0.2,
+      "w_evidence": 0.0,
+      "w_plan": 0.8,
+      "interior": false,
+      "rank": "Kimi-K2.5 > GLM-5 > Qwen3.5-122B-A10B > Qwen-Turbo",
+      "rank_preserved": false,
+      "heldout_delta_S": 0.09175,
+      "heldout_delta_U": 0.07385,
+      "E_strictly_increasing": true,
+      "E3_minus_E0_S": 0.18950000000000003
+    }
+  ],
+  "utility_turn_divisor": 10,
+  "strict_accuracy_weight_invariant": true,
+  "heldout_n": 200
+}

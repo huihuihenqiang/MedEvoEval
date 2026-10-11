@@ -1,0 +1,7 @@
+study,episodes,episodes_with_error,error_incidence,error_turns,invalid_tests,mean_invalid_test_rate
+Four-model comparison,320,82,0.25625,291,75,0.08229166666666667
+Qwen-primary MDT,300,3,0.01,4,38,0.07222222222222223
+Memory stream E0--E3,2000,101,0.0505,299,802,0.1666666666666667
+Held-out H0/H3,400,16,0.04,51,38,0.0425
+Update G0/G1,1000,52,0.052,156,313,0.12816666666666668
+Strong-primary MDT,200,52,0.26,71,39,0.08416666666666668

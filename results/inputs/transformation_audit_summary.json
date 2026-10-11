@@ -1,0 +1,28 @@
+{
+  "verification_status": "Author-confirmed published aggregate.",
+  "aggregate": {
+    "reviewerA": {
+      "n_scored": 50,
+      "fid_diagnosis_preserved_YN_pass_rate": 1,
+      "fid_history_exam_split_faithful_YN_pass_rate": 1,
+      "fid_test_catalog_plausible_YN_pass_rate": 1,
+      "fid_no_fabricated_critical_info_YN_pass_rate": 0.96,
+      "overall_faithfulness_mean_1to5": 4.78
+    },
+    "reviewerB": {
+      "n_scored": 50,
+      "fid_diagnosis_preserved_YN_pass_rate": 1,
+      "fid_history_exam_split_faithful_YN_pass_rate": 0.9,
+      "fid_test_catalog_plausible_YN_pass_rate": 1,
+      "fid_no_fabricated_critical_info_YN_pass_rate": 1,
+      "overall_faithfulness_mean_1to5": 4.46
+    },
+    "inter_rater_A_vs_B": {
+      "n_common": 50,
+      "fid_diagnosis_preserved_YN_agreement": 1,
+      "fid_history_exam_split_faithful_YN_agreement": 0.9,
+      "fid_test_catalog_plausible_YN_agreement": 1,
+      "fid_no_fabricated_critical_info_YN_agreement": 0.96
+    }
+  }
+}

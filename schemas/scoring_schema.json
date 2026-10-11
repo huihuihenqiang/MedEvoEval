@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MedEvoEval Scoring Schema",
+  "type": "object",
+  "required": ["diagnosis_score", "evidence_score", "plan_score", "total_score", "utility"],
+  "properties": {
+    "diagnosis_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "plan_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "total_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "turns": {"type": "integer", "minimum": 0},
+    "tests": {"type": "integer", "minimum": 0},
+    "invalid_tests": {"type": "integer", "minimum": 0},
+    "invalid_test_rate": {"type": "number", "minimum": 0},
+    "utility": {"type": "number"},
+    "strict_correct": {"type": "integer", "enum": [0, 1]},
+    "pass_rate": {"type": "integer", "enum": [0, 1]},
+    "nondanger_rate": {"type": "integer", "enum": [0, 1]}
+  },
+  "additionalProperties": true
+}
+

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MedEvoEval Event Log Schema",
+  "type": "object",
+  "required": ["episode_id", "case_id", "turn_index", "actor", "event_type", "details"],
+  "properties": {
+    "episode_id": {"type": "string"},
+    "case_id": {"type": "string"},
+    "turn_index": {"type": "integer"},
+    "actor": {"type": "string", "enum": ["doctor", "patient", "exam_service", "judge", "mdt_consultant", "system"]},
+    "event_type": {
+      "type": "string",
+      "enum": ["doctor_action", "patient_response", "test_result", "final_decision", "manager_feedback", "mdt_review", "memory_write"]
+    },
+    "details": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+

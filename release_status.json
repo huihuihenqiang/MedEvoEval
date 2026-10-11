@@ -1,0 +1,10 @@
+{
+  "version": "1.1.2",
+  "entrypoint": "scripts/run_paper.py",
+  "default_execution": "configuration check without model API calls",
+  "data_interface": "--data-dir > MEDEVOEVAL_DATA_DIR > sibling MedEvoEval_data",
+  "data_bundled": false,
+  "utility_turn_divisor": 10,
+  "model_display_mapping": "results/display_labels.json",
+  "consultant_dispatch": "models.mdt_expert"
+}

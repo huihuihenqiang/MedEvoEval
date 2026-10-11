@@ -1,0 +1,95 @@
+[
+  {
+    "package": "requests",
+    "tested_version": "2.32.5",
+    "license_metadata": "License :: OSI Approved :: Apache Software License",
+    "project_urls": [
+      "Documentation, https://requests.readthedocs.io",
+      "Source, https://github.com/psf/requests"
+    ]
+  },
+  {
+    "package": "PyYAML",
+    "tested_version": "6.0.3",
+    "license_metadata": "License :: OSI Approved :: MIT License",
+    "project_urls": [
+      "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+      "CI, https://github.com/yaml/pyyaml/actions",
+      "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+      "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+      "Source Code, https://github.com/yaml/pyyaml"
+    ]
+  },
+  {
+    "package": "scikit-learn",
+    "tested_version": "1.3.0",
+    "license_metadata": "License :: OSI Approved :: BSD License",
+    "project_urls": [
+      "Bug Tracker, https://github.com/scikit-learn/scikit-learn/issues",
+      "Documentation, https://scikit-learn.org/stable/documentation.html",
+      "Source Code, https://github.com/scikit-learn/scikit-learn"
+    ]
+  },
+  {
+    "package": "tqdm",
+    "tested_version": "4.67.3",
+    "license_metadata": "MPL-2.0 AND MIT",
+    "project_urls": [
+      "homepage, https://tqdm.github.io",
+      "repository, https://github.com/tqdm/tqdm",
+      "changelog, https://tqdm.github.io/releases",
+      "wiki, https://github.com/tqdm/tqdm/wiki"
+    ]
+  },
+  {
+    "package": "numpy",
+    "tested_version": "1.26.4",
+    "license_metadata": "License :: OSI Approved :: BSD License",
+    "project_urls": [
+      "Homepage, https://numpy.org",
+      "Documentation, https://numpy.org/doc/",
+      "Source, https://github.com/numpy/numpy",
+      "Download, https://pypi.org/project/numpy/#files",
+      "Tracker, https://github.com/numpy/numpy/issues",
+      "Release notes, https://numpy.org/doc/stable/release"
+    ]
+  },
+  {
+    "package": "scipy",
+    "tested_version": "1.15.3",
+    "license_metadata": "License :: OSI Approved :: BSD License",
+    "project_urls": [
+      "homepage, https://scipy.org/",
+      "documentation, https://docs.scipy.org/doc/scipy/",
+      "source, https://github.com/scipy/scipy",
+      "download, https://github.com/scipy/scipy/releases",
+      "tracker, https://github.com/scipy/scipy/issues"
+    ]
+  },
+  {
+    "package": "matplotlib",
+    "tested_version": "3.7.2",
+    "license_metadata": "License :: OSI Approved :: Python Software Foundation License",
+    "project_urls": [
+      "Documentation, https://matplotlib.org",
+      "Source Code, https://github.com/matplotlib/matplotlib",
+      "Bug Tracker, https://github.com/matplotlib/matplotlib/issues",
+      "Forum, https://discourse.matplotlib.org/",
+      "Donate, https://numfocus.org/donate-to-matplotlib"
+    ]
+  },
+  {
+    "package": "jsonschema",
+    "tested_version": "4.26.0",
+    "license_metadata": "MIT",
+    "project_urls": [
+      "Homepage, https://github.com/python-jsonschema/jsonschema",
+      "Documentation, https://python-jsonschema.readthedocs.io/",
+      "Issues, https://github.com/python-jsonschema/jsonschema/issues/",
+      "Funding, https://github.com/sponsors/Julian",
+      "Tidelift, https://tidelift.com/subscription/pkg/pypi-jsonschema?utm_source=pypi-jsonschema&utm_medium=referral&utm_campaign=pypi-link",
+      "Changelog, https://github.com/python-jsonschema/jsonschema/blob/main/CHANGELOG.rst",
+      "Source, https://github.com/python-jsonschema/jsonschema"
+    ]
+  }
+]

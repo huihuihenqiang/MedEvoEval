@@ -1,0 +1,5 @@
+-r requirements.txt
+# The frozen-results scripts use numpy, scipy and matplotlib from requirements.txt.
+# Optional packages for author-side statistical/review extensions:
+statsmodels>=0.14,<1
+openpyxl>=3.1,<4

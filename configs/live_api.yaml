@@ -1,0 +1,21 @@
+seed: 7
+max_turns: 10
+max_tests: 3
+memory_mode: disabled
+top_k_ret: 0
+mdt_enabled: false
+model_name: user-supplied-model
+input_path: ../data/chinese_medevoeval_medqa700.jsonl
+output_path: outputs/live_api
+llm_mode: api
+temperature: 0.0
+timeout_seconds: 90
+scoring:
+  lambda_evidence: 0.5
+  mu_management: 1.0
+  weight_diag: 0.5
+  weight_evidence: 0.3
+  weight_plan: 0.2
+  pass_threshold: 0.7
+  effective_treatment_threshold: 0.5
+notes: "Lightweight example only: toy patient, mock MDT, string-match judge; no paper-protocol claim. Set LLM_API_KEY, LLM_BASE_URL, and MODEL_NAME in the environment or local .env."

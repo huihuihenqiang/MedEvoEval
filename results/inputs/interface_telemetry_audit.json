@@ -1,0 +1,237 @@
+{
+  "normalization": {
+    "normalization_events": 112,
+    "semantic_failures": [],
+    "format_reprompt_turns": 0,
+    "repair_methods": {
+      "dataset_alias": 41,
+      "taxonomy_keyword": 71
+    },
+    "top_test_mappings": [
+      {
+        "original": "血常规",
+        "normalized": "实验室检查类",
+        "count": 16
+      },
+      {
+        "original": "体格检查",
+        "normalized": "体格检查类",
+        "count": 13
+      },
+      {
+        "original": "腹部超声",
+        "normalized": "影像学检查类",
+        "count": 4
+      },
+      {
+        "original": "头颅MRI",
+        "normalized": "影像学检查类",
+        "count": 4
+      },
+      {
+        "original": "脑电图",
+        "normalized": "功能检查类",
+        "count": 3
+      },
+      {
+        "original": "尿常规",
+        "normalized": "实验室检查类",
+        "count": 3
+      },
+      {
+        "original": "胸部X线平片",
+        "normalized": "影像学检查类",
+        "count": 2
+      },
+      {
+        "original": "膝关节体格检查",
+        "normalized": "体格检查类",
+        "count": 2
+      },
+      {
+        "original": "前庭功能检查",
+        "normalized": "功能检查类",
+        "count": 2
+      },
+      {
+        "original": "超声心动图",
+        "normalized": "影像学检查类",
+        "count": 2
+      },
+      {
+        "original": "血尿酸测定",
+        "normalized": "实验室检查类",
+        "count": 2
+      },
+      {
+        "original": "眼底检查",
+        "normalized": "体格检查类",
+        "count": 2
+      },
+      {
+        "original": "粪便常规",
+        "normalized": "实验室检查类",
+        "count": 2
+      },
+      {
+        "original": "腹部触诊",
+        "normalized": "体格检查类",
+        "count": 2
+      },
+      {
+        "original": "皮肤体格检查",
+        "normalized": "体格检查类",
+        "count": 2
+      },
+      {
+        "original": "直肠指检",
+        "normalized": "体格检查类",
+        "count": 1
+      },
+      {
+        "original": "鼻内镜检查",
+        "normalized": "内镜检查类",
+        "count": 1
+      },
+      {
+        "original": "肛门指检",
+        "normalized": "体格检查类",
+        "count": 1
+      },
+      {
+        "original": "胸部CT平扫",
+        "normalized": "影像学检查类",
+        "count": 1
+      },
+      {
+        "original": "泌尿系统超声",
+        "normalized": "影像学检查类",
+        "count": 1
+      },
+      {
+        "original": "肩部X线平片",
+        "normalized": "影像学检查类",
+        "count": 1
+      },
+      {
+        "original": "肩关节超声",
+        "normalized": "影像学检查类",
+        "count": 1
+      },
+      {
+        "original": "盆腔超声",
+        "normalized": "影像学检查类",
+        "count": 1
+      },
+      {
+        "original": "实验室检查类：性激素六项",
+        "normalized": "实验室检查类",
+        "count": 1
+      },
+      {
+        "original": "子宫输卵管造影",
+        "normalized": "影像学检查类",
+        "count": 1
+      },
+      {
+        "original": "心电图",
+        "normalized": "功能检查类",
+        "count": 1
+      },
+      {
+        "original": "动态心电图",
+        "normalized": "功能检查类",
+        "count": 1
+      },
+      {
+        "original": "颈椎体格检查",
+        "normalized": "体格检查类",
+        "count": 1
+      },
+      {
+        "original": "膝关节X线检查",
+        "normalized": "影像学检查类",
+        "count": 1
+      },
+      {
+        "original": "心脏听诊",
+        "normalized": "体格检查类",
+        "count": 1
+      }
+    ]
+  },
+  "protocol_integrity": {
+    "arm_config_failures": [],
+    "paired_config_failures": [],
+    "case_payload_failures": [],
+    "nonempty_api_key_snapshots": [],
+    "raw_normalization_events": [],
+    "interface_accounting_failures": [],
+    "arm_order_failures": []
+  },
+  "runner_errors": {
+    "errors_recorded": 1,
+    "errors_recovered": 1,
+    "errors_unresolved": [],
+    "by_type": {
+      "OSError": 1
+    },
+    "rows": [
+      {
+        "model": "Kimi-K2.5",
+        "arm": "raw",
+        "scenario_id": 23,
+        "error_type": "OSError",
+        "recovered": true
+      }
+    ],
+    "recorded_error_usage": {
+      "calls": 14,
+      "http_errors": 0,
+      "prompt_tokens": 9490,
+      "completion_tokens": 2238,
+      "reasoning_tokens": 0,
+      "by_model": {
+        "kimi-k2.5": {
+          "calls": 9,
+          "http_errors": 0,
+          "prompt_tokens": 8221,
+          "completion_tokens": 2043,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 5,
+          "http_errors": 0,
+          "prompt_tokens": 1269,
+          "completion_tokens": 195,
+          "reasoning_tokens": 0
+        }
+      },
+      "standard_prices_cny_per_million": {
+        "qwen-turbo": {
+          "input": 0.3,
+          "output": 0.6
+        },
+        "qwen3.5-122b-a10b": {
+          "input": 0.8,
+          "output": 6.4
+        },
+        "glm-5": {
+          "input": 4.0,
+          "output": 18.0
+        },
+        "kimi-k2.5": {
+          "input": 4.0,
+          "output": 21.0
+        }
+      },
+      "estimated_list_cost_cny_by_model": {
+        "kimi-k2.5": 0.075787,
+        "qwen-turbo": 0.0004977
+      },
+      "estimated_list_cost_cny_total": 0.0762847,
+      "cost_note": "Standard China-mainland pay-as-you-go list-price estimate. Actual billing can be lower because free quota, savings plans, promotions, and cache discounts are not observable here.",
+      "pricing_source": "https://help.aliyun.com/en/model-studio/model-pricing"
+    }
+  }
+}

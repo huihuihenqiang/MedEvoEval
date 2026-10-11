@@ -1,0 +1,7 @@
+{
+  "code_url": "https://github.com/huihuihenqiang/MedEvoEval",
+  "dataset_url": "https://www.kaggle.com/datasets/anonymousmedevoeval/medevoeval-anonymous-review-dataset",
+  "paper_url": "https://arxiv.org/abs/2606.28900",
+  "project_url": "https://huihuihenqiang.github.io/medevoeval/",
+  "croissant_url": "https://huihuihenqiang.github.io/medevoeval/croissant.json"
+}

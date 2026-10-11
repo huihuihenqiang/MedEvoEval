@@ -1,0 +1,76 @@
+{
+  "runtime": {
+    "scenario_source": "medqa",
+    "dataset_path": "../../../MedEvoEval_data/chinese_medevoeval_medqa700.jsonl",
+    "run_n_cases": 1,
+    "write_legacy_outputs": false,
+    "use_simulacra_bridge": false,
+    "enable_llm": true,
+    "seed": 7
+  },
+  "models": {
+    "attending": "qwen-turbo",
+    "patient": "qwen-turbo",
+    "manager": "kimi-k2.5",
+    "mdt_expert": "kimi-k2.5"
+  },
+  "workflow": {
+    "max_total_turns": 10,
+    "max_tests_per_visit": 3
+  },
+  "clinical_tests": {
+    "allowed_catalog": [
+      "体格检查类",
+      "实验室检查类",
+      "影像学检查类",
+      "功能检查类",
+      "内镜检查类",
+      "病理/活检类",
+      "分子/基因检测类",
+      "治疗/处置类",
+      "会诊/转诊类"
+    ]
+  },
+  "interface_normalization": {
+    "enabled": false,
+    "deterministic_json_repair": true,
+    "allow_format_only_reprompt": false
+  },
+  "mdt": {
+    "enabled": false,
+    "team_size": 0,
+    "collaboration": "consensus"
+  },
+  "memory": {
+    "mode": "retrieve_replay",
+    "enable_retrieval": true,
+    "read_only": false,
+    "include_failure_correction": true,
+    "namespace": "paper",
+    "kb_root_dir": "../../outputs/memory/h3",
+    "retrieval_topk": 3,
+    "conversation_window": 64,
+    "kb_snippet_token_limit": 160
+  },
+  "api_keys": {
+    "dashscope": ""
+  },
+  "api_base": {
+    "dashscope": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  },
+  "network": {
+    "use_system_proxy": false
+  },
+  "scoring": {
+    "lambda_evidence": 0.5,
+    "mu_management": 1,
+    "weight_diag": 0.5,
+    "weight_evidence": 0.3,
+    "weight_plan": 0.2,
+    "pass_threshold": 0.7,
+    "effective_treatment_threshold": 0.5
+  },
+  "release": {
+    "token_profile": "main"
+  }
+}

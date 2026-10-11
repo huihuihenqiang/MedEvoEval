@@ -1,0 +1,251 @@
+{
+  "calls": 6416,
+  "http_errors": 0,
+  "prompt_tokens": 4203181,
+  "completion_tokens": 6904473,
+  "reasoning_tokens": 6122560,
+  "by_model": {
+    "glm-5": {
+      "calls": 739,
+      "http_errors": 0,
+      "prompt_tokens": 700771,
+      "completion_tokens": 2000713,
+      "reasoning_tokens": 1845424
+    },
+    "kimi-k2.5": {
+      "calls": 1584,
+      "http_errors": 0,
+      "prompt_tokens": 1272084,
+      "completion_tokens": 267343,
+      "reasoning_tokens": 0
+    },
+    "qwen-turbo": {
+      "calls": 3114,
+      "http_errors": 0,
+      "prompt_tokens": 1409544,
+      "completion_tokens": 184870,
+      "reasoning_tokens": 0
+    },
+    "qwen3.5-122b-a10b": {
+      "calls": 979,
+      "http_errors": 0,
+      "prompt_tokens": 820782,
+      "completion_tokens": 4451547,
+      "reasoning_tokens": 4277136
+    }
+  },
+  "by_attending_condition": {
+    "Qwen-Turbo|raw": {
+      "calls": 921,
+      "http_errors": 0,
+      "prompt_tokens": 572272,
+      "completion_tokens": 72657,
+      "reasoning_tokens": 0,
+      "by_model": {
+        "kimi-k2.5": {
+          "calls": 80,
+          "http_errors": 0,
+          "prompt_tokens": 43670,
+          "completion_tokens": 4128,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 841,
+          "http_errors": 0,
+          "prompt_tokens": 528602,
+          "completion_tokens": 68529,
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "Qwen-Turbo|normalized": {
+      "calls": 950,
+      "http_errors": 0,
+      "prompt_tokens": 587957,
+      "completion_tokens": 74168,
+      "reasoning_tokens": 0,
+      "by_model": {
+        "kimi-k2.5": {
+          "calls": 80,
+          "http_errors": 0,
+          "prompt_tokens": 43885,
+          "completion_tokens": 3985,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 870,
+          "http_errors": 0,
+          "prompt_tokens": 544072,
+          "completion_tokens": 70183,
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "Qwen3.5-122B-A10B|raw": {
+      "calls": 972,
+      "http_errors": 0,
+      "prompt_tokens": 604788,
+      "completion_tokens": 3178449,
+      "reasoning_tokens": 3062364,
+      "by_model": {
+        "kimi-k2.5": {
+          "calls": 80,
+          "http_errors": 0,
+          "prompt_tokens": 45371,
+          "completion_tokens": 4245,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 289,
+          "http_errors": 0,
+          "prompt_tokens": 68069,
+          "completion_tokens": 8560,
+          "reasoning_tokens": 0
+        },
+        "qwen3.5-122b-a10b": {
+          "calls": 603,
+          "http_errors": 0,
+          "prompt_tokens": 491348,
+          "completion_tokens": 3165644,
+          "reasoning_tokens": 3062364
+        }
+      }
+    },
+    "Qwen3.5-122B-A10B|normalized": {
+      "calls": 682,
+      "http_errors": 0,
+      "prompt_tokens": 428355,
+      "completion_tokens": 1297166,
+      "reasoning_tokens": 1214772,
+      "by_model": {
+        "kimi-k2.5": {
+          "calls": 80,
+          "http_errors": 0,
+          "prompt_tokens": 45868,
+          "completion_tokens": 4571,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 226,
+          "http_errors": 0,
+          "prompt_tokens": 53053,
+          "completion_tokens": 6692,
+          "reasoning_tokens": 0
+        },
+        "qwen3.5-122b-a10b": {
+          "calls": 376,
+          "http_errors": 0,
+          "prompt_tokens": 329434,
+          "completion_tokens": 1285903,
+          "reasoning_tokens": 1214772
+        }
+      }
+    },
+    "GLM-5|raw": {
+      "calls": 627,
+      "http_errors": 0,
+      "prompt_tokens": 441184,
+      "completion_tokens": 1054031,
+      "reasoning_tokens": 964462,
+      "by_model": {
+        "glm-5": {
+          "calls": 374,
+          "http_errors": 0,
+          "prompt_tokens": 351539,
+          "completion_tokens": 1043366,
+          "reasoning_tokens": 964462
+        },
+        "kimi-k2.5": {
+          "calls": 80,
+          "http_errors": 0,
+          "prompt_tokens": 48504,
+          "completion_tokens": 4792,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 173,
+          "http_errors": 0,
+          "prompt_tokens": 41141,
+          "completion_tokens": 5873,
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "GLM-5|normalized": {
+      "calls": 625,
+      "http_errors": 0,
+      "prompt_tokens": 440503,
+      "completion_tokens": 967679,
+      "reasoning_tokens": 880962,
+      "by_model": {
+        "glm-5": {
+          "calls": 365,
+          "http_errors": 0,
+          "prompt_tokens": 349232,
+          "completion_tokens": 957347,
+          "reasoning_tokens": 880962
+        },
+        "kimi-k2.5": {
+          "calls": 80,
+          "http_errors": 0,
+          "prompt_tokens": 48397,
+          "completion_tokens": 4627,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 180,
+          "http_errors": 0,
+          "prompt_tokens": 42874,
+          "completion_tokens": 5705,
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "Kimi-K2.5|raw": {
+      "calls": 835,
+      "http_errors": 0,
+      "prompt_tokens": 573401,
+      "completion_tokens": 133775,
+      "reasoning_tokens": 0,
+      "by_model": {
+        "kimi-k2.5": {
+          "calls": 561,
+          "http_errors": 0,
+          "prompt_tokens": 505948,
+          "completion_tokens": 123889,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 274,
+          "http_errors": 0,
+          "prompt_tokens": 67453,
+          "completion_tokens": 9886,
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "Kimi-K2.5|normalized": {
+      "calls": 804,
+      "http_errors": 0,
+      "prompt_tokens": 554721,
+      "completion_tokens": 126548,
+      "reasoning_tokens": 0,
+      "by_model": {
+        "kimi-k2.5": {
+          "calls": 543,
+          "http_errors": 0,
+          "prompt_tokens": 490441,
+          "completion_tokens": 117106,
+          "reasoning_tokens": 0
+        },
+        "qwen-turbo": {
+          "calls": 261,
+          "http_errors": 0,
+          "prompt_tokens": 64280,
+          "completion_tokens": 9442,
+          "reasoning_tokens": 0
+        }
+      }
+    }
+  }
+}

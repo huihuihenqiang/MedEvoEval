@@ -1,0 +1,17 @@
+seed: 7
+max_turns: 6
+max_tests: 2
+mdt_enabled: false
+model_name: ${MODEL_NAME:-mock-doctor}
+input_path: examples/sample_cases.jsonl
+output_path: outputs/demo
+llm_mode: mock
+scoring:
+  lambda_evidence: 0.5
+  mu_management: 1.0
+  weight_diag: 0.5
+  weight_evidence: 0.3
+  weight_plan: 0.2
+  pass_threshold: 0.7
+  effective_treatment_threshold: 0.5
+

@@ -1,0 +1,19 @@
+family_id,n_tests,n_significant_holm,surviving
+heldout_transfer,7,2,"['H3 - H0 / utility', 'H3 - H0 / turns']"
+table8_dynamic_models,9,6,"['Kimi-K2.5 - Qwen-Turbo / total_score', 'Kimi-K2.5 - Qwen-Turbo / utility', 'Kimi-K2.5 - Qwen-Turbo / strict_accuracy', 'GLM-5 - Qwen-Turbo / total_score', 'GLM-5 - Qwen-Turbo / utility', 'GLM-5 - Qwen-Turbo / strict_accuracy']"
+original_mdt_vs_nomdt,10,3,"['B_同模型MDT - A_无MDT / tests', 'C_强模型MDT - A_无MDT / turns', 'C_强模型MDT - A_无MDT / tests']"
+original_mdt_consultant,5,2,"['C_强模型MDT - B_同模型MDT / turns', 'C_强模型MDT - B_同模型MDT / tests']"
+placebo_real_vs_shuffled,9,1,['h3real - h3shuffled / tests']
+placebo_real_vs_h0,9,0,[]
+placebo_shuffled_vs_h0,9,0,[]
+strong_mdt_itt,11,2,"['MDT - NoMDT / turns', 'MDT - NoMDT / tests']"
+memory_content_ablation,6,0,[]
+retrieval_scale_ablation,6,0,[]
+update_trend_g0,6,0,[]
+update_trend_g1,6,0,[]
+backward_transfer,2,0,[]
+interface_arm_effect_outcomes,12,2,"['Qwen3.5-122B-A10B: normalized - raw / total_score', 'Qwen3.5-122B-A10B: normalized - raw / utility']"
+interface_arm_effect_process,8,2,"['Qwen3.5-122B-A10B: normalized - raw / turns', 'Qwen3.5-122B-A10B: normalized - raw / tests']"
+interface_interface_manipulation_check,8,2,"['Qwen3.5-122B-A10B: normalized - raw / llm_error_turns', 'Qwen3.5-122B-A10B: normalized - raw / any_error_episode']"
+interface_raw_model_ranking,9,5,"['GLM-5 - Qwen-Turbo / total_score', 'GLM-5 - Qwen-Turbo / utility', 'GLM-5 - Qwen-Turbo / strict_accuracy', 'Kimi-K2.5 - Qwen-Turbo / total_score', 'Kimi-K2.5 - Qwen-Turbo / utility']"
+interface_normalized_model_ranking,9,8,"['Qwen3.5-122B-A10B - Qwen-Turbo / total_score', 'Qwen3.5-122B-A10B - Qwen-Turbo / utility', 'GLM-5 - Qwen-Turbo / total_score', 'GLM-5 - Qwen-Turbo / utility', 'GLM-5 - Qwen-Turbo / strict_accuracy', 'Kimi-K2.5 - Qwen-Turbo / total_score', 'Kimi-K2.5 - Qwen-Turbo / utility', 'Kimi-K2.5 - Qwen-Turbo / strict_accuracy']"

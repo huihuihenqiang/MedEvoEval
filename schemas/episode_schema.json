@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MedEvoEval Episode Schema",
+  "type": "object",
+  "required": ["episode_id", "case_id", "events", "final_decision", "scores"],
+  "properties": {
+    "episode_id": {"type": "string"},
+    "case_id": {"type": "string"},
+    "config": {"type": "object"},
+    "events": {"type": "array", "items": {"$ref": "event_log_schema.json"}},
+    "final_decision": {
+      "type": "object",
+      "properties": {
+        "diagnosis": {"type": "array", "items": {"type": "string"}},
+        "evidence": {"type": "array", "items": {"type": "string"}},
+        "plan": {"type": "array", "items": {"type": "string"}},
+        "followup": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "scores": {"$ref": "scoring_schema.json"}
+  },
+  "additionalProperties": true
+}
+
