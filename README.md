@@ -100,3 +100,7 @@ python -B scripts/package_release.py
 ```
 
 The command creates `dist/MedEvoEval_code.zip` from the verified file manifest. Local outputs, environments and credentials are excluded.
+
+## Project attribution
+
+MedEvoEval was created by Hui Zhang (Beijing Institute of Technology). Cite the accompanying paper: https://arxiv.org/abs/2606.28900 . Upstream attribution and component licenses remain as specified above.

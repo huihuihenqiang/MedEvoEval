@@ -32,3 +32,5 @@ Physician scoring covers the same 80 outputs for both reviewers, joined by `audi
 The 50-case transformation audit is supplied as the confirmed aggregate. Alternative judges and diagnosis matching cover 2,520 outputs: four models at 80 each, four stream stages at 500 each, and a 100-pair held-out subset. The repeated scorer covers 520 outputs. Qwen-Max uses deterministic rubric matching for 107 extraction failures. The strong-primary analysis includes all 100 pairs, with MDT invoked in 85 episodes.
 
 Resource quantities are marked measured, estimated or partial-segment coverage. The project estimate includes development runs. Memory-card summaries and published audit aggregates are included as supporting inputs. Record IDs and pairing remain as defined in the paper.
+
+The complete 141-test manifest accompanying Appendix E is `final_holm_tests.csv`; correction-family definitions are in `final_holm_families.csv`. These files include non-significant results, effects, intervals, and raw and Holm-adjusted p-values.
