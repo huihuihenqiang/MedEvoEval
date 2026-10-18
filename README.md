@@ -101,6 +101,22 @@ python -B scripts/package_release.py
 
 The command creates `dist/MedEvoEval_code.zip` from the verified file manifest. Local outputs, environments and credentials are excluded.
 
+## Citation
+
+If you use MedEvoEval, its dataset, or its evaluation code, please cite:
+
+```bibtex
+@inproceedings{zhang2026medevoeval,
+  title     = {{MedEvoEval}: Evaluating Continual Evolution of Doctor Agents through Simulated Clinical Episodes},
+  author    = {Zhang, Hui},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=Ja5320z9Vi}
+}
+```
+
+MedEvoEval was created by Hui Zhang, Beijing Institute of Technology. Attribution and license information for upstream resources are provided in the accompanying documentation.
+
 ## Project attribution
 
 MedEvoEval was created by Hui Zhang (Beijing Institute of Technology). Cite the accompanying paper: https://arxiv.org/abs/2606.28900 . Upstream attribution and component licenses remain as specified above.
